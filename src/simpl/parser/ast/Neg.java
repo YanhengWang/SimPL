@@ -22,8 +22,10 @@ public class Neg extends UnaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        TypeResult t = e.typecheck(E);
+        if(t.t != Type.INT)
+            throw new TypeError("Taking negation of non-int");
+        return TypeResult.of(Type.INT);
     }
 
     @Override

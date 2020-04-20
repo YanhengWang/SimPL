@@ -23,8 +23,18 @@ public class Assign extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        Type t1 = l.typecheck(E).t;
+        Type t2 = r.typecheck(E).t;
+        if(t1 instanceof RefType){
+            RefType tref = (RefType)t1;
+            if(tref.t == t2) {
+                return TypeResult.of(Type.UNIT);
+            }else{
+                throw new TypeError("Assigning incompatible types");
+            }
+        }else{
+            throw new TypeError("Dereferencing non-pointer");
+        }
     }
 
     @Override

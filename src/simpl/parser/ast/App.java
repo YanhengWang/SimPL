@@ -26,8 +26,21 @@ public class App extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        TypeResult t1 = l.typecheck(E);
+        TypeResult t2 = r.typecheck(E);
+        ArrowType tabs;
+
+        if(t1.t instanceof ArrowType){
+            tabs = (ArrowType)t1.t;
+            if(tabs.t1 == t2.t){
+                //match
+                return TypeResult.of(tabs.t2);
+            }else{
+                throw new TypeError("Types of parameter and argument mismatch");
+            }
+        }else{
+            throw new TypeError("Applying non-function");
+        }
     }
 
     @Override

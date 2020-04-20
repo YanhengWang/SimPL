@@ -24,8 +24,13 @@ public class Deref extends UnaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        Type t = e.typecheck(E).t;
+        if(t instanceof RefType){
+            RefType tref = (RefType)t;
+            return TypeResult.of(tref.t);
+        }else {
+            throw new TypeError("Dereferencing non-pointer");
+        }
     }
 
     @Override

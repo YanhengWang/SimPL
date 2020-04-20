@@ -25,8 +25,11 @@ public class Loop extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        if(e1.typecheck(E).t == Type.BOOL) {
+            return TypeResult.of(e2.typecheck(E).t);
+        }else{
+            throw new TypeError("Type of condition is not bool");
+        }
     }
 
     @Override

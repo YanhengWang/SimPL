@@ -1,0 +1,6 @@
+let p = ref 14 in
+	let q = p in
+		q := !q + 1;
+		!p
+	end
+end

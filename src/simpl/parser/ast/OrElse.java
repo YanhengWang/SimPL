@@ -22,8 +22,11 @@ public class OrElse extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        TypeResult t1 = l.typecheck(E);
+        TypeResult t2 = r.typecheck(E);
+        if(t1.t != Type.BOOL || t2.t != Type.BOOL)
+            throw new TypeError("Operands of orElse are not booleans");
+        return TypeResult.of(Type.BOOL);
     }
 
     @Override

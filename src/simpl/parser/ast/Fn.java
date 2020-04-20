@@ -29,6 +29,7 @@ public class Fn extends Expr {
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
         // TODO
+        //TypeResult tsub = e.typecheck(TypeEnv.of(E, x, ));
         return null;
     }
 

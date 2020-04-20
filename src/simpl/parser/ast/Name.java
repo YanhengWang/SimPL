@@ -24,8 +24,10 @@ public class Name extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        Type t = E.get(x);
+        if(t == null)
+            throw new TypeError("Symbol " + x + " doesn't have type");
+        return TypeResult.of(t);
     }
 
     @Override

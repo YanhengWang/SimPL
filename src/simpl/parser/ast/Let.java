@@ -26,8 +26,9 @@ public class Let extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        TypeResult t1 = e1.typecheck(E);
+        TypeResult t2 = e2.typecheck(TypeEnv.of(E, x, t1.t));
+        return t2;
     }
 
     @Override
