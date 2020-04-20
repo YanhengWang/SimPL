@@ -29,7 +29,7 @@ public class Cond extends Expr {
         if(e1.typecheck(E).t == Type.BOOL) {
             Type t2 = e2.typecheck(E).t;
             Type t3 = e3.typecheck(E).t;
-            if(t2 == t3)
+            if(t2.toString().equals(t3.toString()))
                 return TypeResult.of(t2);
             else
                 throw new TypeError("Type of then-clause and else-clause don't match");

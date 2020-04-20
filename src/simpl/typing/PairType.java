@@ -11,8 +11,7 @@ public final class PairType extends Type {
 
     @Override
     public boolean isEqualityType() {
-        // TODO
-        return false;
+        return t1.isEqualityType() && t2.isEqualityType();
     }
 
     @Override

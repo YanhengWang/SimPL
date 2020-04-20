@@ -8,6 +8,7 @@ public class DefaultTypeEnv extends TypeEnv {
 
     public DefaultTypeEnv() {
         E = TypeEnv.empty;
+        // TODO: The default setting should include predefined library functions
     }
 
     @Override

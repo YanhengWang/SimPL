@@ -7,8 +7,7 @@ final class BoolType extends Type {
 
     @Override
     public boolean isEqualityType() {
-        // TODO
-        return false;
+        return true;
     }
 
     @Override

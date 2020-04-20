@@ -26,8 +26,8 @@ public class Assign extends BinaryExpr {
         Type t1 = l.typecheck(E).t;
         Type t2 = r.typecheck(E).t;
         if(t1 instanceof RefType){
-            RefType tref = (RefType)t1;
-            if(tref.t == t2) {
+            Type t3 = ((RefType)t1).t;  //retrieve the type being referenced
+            if(t3.toString().equals(t2.toString())) {
                 return TypeResult.of(Type.UNIT);
             }else{
                 throw new TypeError("Assigning incompatible types");

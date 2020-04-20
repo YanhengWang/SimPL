@@ -10,8 +10,7 @@ public final class ListType extends Type {
 
     @Override
     public boolean isEqualityType() {
-        // TODO
-        return false;
+        return t.isEqualityType();
     }
 
     @Override

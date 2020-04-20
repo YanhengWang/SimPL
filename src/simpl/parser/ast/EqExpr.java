@@ -18,7 +18,13 @@ public abstract class EqExpr extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        Type t1 = l.typecheck(E).t;
+        Type t2 = r.typecheck(E).t;
+
+        if(t1.isEqualityType() && t2.isEqualityType() && t1.toString().equals(t2.toString())){
+            return TypeResult.of(Type.BOOL);
+        }else{
+            throw new TypeError("Incomparable types");
+        }
     }
 }

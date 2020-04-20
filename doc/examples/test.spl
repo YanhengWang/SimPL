@@ -1,6 +1,10 @@
 let p = ref 14 in
-	let q = p in
-		q := !q + 1;
-		!p
+	let q = ref 10 in
+		let r = ref p in
+			!r := !q;
+			q := !!r;
+			r;
+            (!r, q)
+		end
 	end
 end

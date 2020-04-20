@@ -19,46 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/examples/test.spl" afterDir="false" />
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Basic type checker added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/AndAlso.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/AndAlso.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/ArithExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/ArithExpr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Assign.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Assign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Cond.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Cond.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Deref.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Deref.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Fn.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Fn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Let.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Let.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Loop.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Loop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Name.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Neg.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Neg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Not.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Not.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/OrElse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/OrElse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Ref.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Ref.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/RelExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/RelExpr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/DefaultTypeEnv.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/DefaultTypeEnv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/AndAlso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/AndAlso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/ArithExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/ArithExpr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/examples/test.spl" beforeDir="false" afterPath="$PROJECT_DIR$/doc/examples/test.spl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Assign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Assign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Cond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Cond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Deref.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Deref.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Fn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Fn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Neg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Neg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Not.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Not.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/OrElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/OrElse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Ref.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Ref.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/RelExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/RelExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Cons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Cons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/EqExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/EqExpr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/BoolType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simpl/typing/DefaultTypeEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/DefaultTypeEnv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/IntType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/ListType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/ListType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/PairType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/PairType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/RefType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/RefType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +88,14 @@
       <option name="presentableId" value="Default" />
       <updated>1587354957009</updated>
     </task>
+    <task id="LOCAL-00001" summary="Basic type checker added.">
+      <created>1587376875361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587376875361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +158,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic type checker added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic type checker added." />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Java" timestamp="1587358910189">
@@ -202,30 +190,34 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="447" y="285" width="472" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.696@0.0.1366.696" timestamp="1587374393657" />
-    <state width="1324" height="158" key="GridCell.Tab.0.bottom" timestamp="1587376731102">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state width="1153" height="116" key="GridCell.Tab.0.bottom" timestamp="1587394707969">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1324" height="158" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1587376731102" />
-    <state width="1324" height="167" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1587368438830" />
-    <state width="1324" height="158" key="GridCell.Tab.0.center" timestamp="1587376731100">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state width="1324" height="158" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1587376862480" />
+    <state width="1153" height="116" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1587394707969" />
+    <state width="1153" height="116" key="GridCell.Tab.0.center" timestamp="1587394707968">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1324" height="158" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1587376731100" />
-    <state width="1324" height="167" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1587368438829" />
-    <state width="1324" height="158" key="GridCell.Tab.0.left" timestamp="1587376731099">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state width="1324" height="158" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1587376862479" />
+    <state width="1153" height="116" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1587394707968" />
+    <state width="1153" height="116" key="GridCell.Tab.0.left" timestamp="1587394707967">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1324" height="158" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1587376731099" />
-    <state width="1324" height="167" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1587368438828" />
-    <state width="1324" height="158" key="GridCell.Tab.0.right" timestamp="1587376731101">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state width="1324" height="158" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1587376862478" />
+    <state width="1153" height="116" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1587394707967" />
+    <state width="1153" height="116" key="GridCell.Tab.0.right" timestamp="1587394707968">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1324" height="158" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1587376731101" />
-    <state width="1324" height="167" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1587368438829" />
+    <state width="1324" height="158" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1587376862480" />
+    <state width="1153" height="116" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1587394707968" />
     <state x="283" y="0" key="SettingsEditor" timestamp="1587359105934">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
+    <state x="283" y="124" key="Vcs.Push.Dialog.v2" timestamp="1587376890171">
+      <screen x="0" y="0" width="1366" height="696" />
+    </state>
+    <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1587376890171" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1587361985846">
       <screen x="0" y="0" width="1366" height="696" />
     </state>

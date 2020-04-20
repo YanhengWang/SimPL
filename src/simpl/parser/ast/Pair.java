@@ -21,8 +21,9 @@ public class Pair extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        TypeResult t1 = l.typecheck(E);
+        TypeResult t2 = r.typecheck(E);
+        return TypeResult.of(new PairType(t1.t, t2.t));
     }
 
     @Override

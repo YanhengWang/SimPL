@@ -10,8 +10,7 @@ public final class RefType extends Type {
 
     @Override
     public boolean isEqualityType() {
-        // TODO
-        return false;
+        return true;
     }
 
     @Override
