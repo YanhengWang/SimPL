@@ -1,0 +1,7 @@
+let append =
+  rec f => fn l => fn n =>
+    if l=nil then n::nil
+    else f (tl l) n
+in
+  append (1::2::3::nil) 100
+end
