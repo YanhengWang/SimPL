@@ -1,0 +1,16 @@
+let list = ref nil in
+  let i = ref 0 in
+    while !i < 100 do
+  	  list := (2*!i)::(!list);
+  	  i := !i + 1
+  end;
+  let sum = ref 0 in
+  let i = ref 99 in
+    while !i >= 0 do
+  	  sum := !sum + hd !list;
+  	  list := tl !list;
+  	  i := !i - 1
+  end;
+  !sum
+  end
+end

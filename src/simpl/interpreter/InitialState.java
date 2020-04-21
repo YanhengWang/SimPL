@@ -1,13 +1,13 @@
 package simpl.interpreter;
 
-import static simpl.parser.Symbol.symbol;
-import simpl.interpreter.lib.hd;
-import simpl.interpreter.lib.tl;
-import simpl.interpreter.lib.fst;
-import simpl.interpreter.lib.snd;
-import simpl.interpreter.pcf.iszero;
-import simpl.interpreter.pcf.pred;
-import simpl.interpreter.pcf.succ;
+import simpl.interpreter.lib.Fst;
+import simpl.interpreter.lib.Hd;
+import simpl.interpreter.lib.Snd;
+import simpl.interpreter.lib.Tl;
+import simpl.interpreter.pcf.IsZero;
+import simpl.interpreter.pcf.Pred;
+import simpl.interpreter.pcf.Succ;
+import simpl.parser.Symbol;
 
 public class InitialState extends State {
 
@@ -16,7 +16,14 @@ public class InitialState extends State {
     }
 
     private static Env initialEnv() {
-        return Env.empty;
-        // TODO: Take top-level functions into consideration.
+        Env ret = Env.empty;
+        ret = new Env(ret, Symbol.symbol("fst"), Fst.fst);
+        ret = new Env(ret, Symbol.symbol("snd"), Snd.snd);
+        ret = new Env(ret, Symbol.symbol("hd"), Hd.hd);
+        ret = new Env(ret, Symbol.symbol("tl"), Tl.tl);
+        ret = new Env(ret, Symbol.symbol("pred"), Pred.pred);
+        ret = new Env(ret, Symbol.symbol("succ"), Succ.succ);
+        ret = new Env(ret, Symbol.symbol("iszero"), IsZero.iszero);
+        return ret;
     }
 }
