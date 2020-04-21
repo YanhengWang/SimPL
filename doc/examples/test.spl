@@ -2,9 +2,10 @@ let p = ref 14 in
 	let q = ref 10 in
 		let r = ref p in
 			!r := !q;
-			q := !!r;
-			r;
-            (!r, q)
+			q := !!r - 7;
+			r := q;
+			!r := 15;
+			(!p, !q)
 		end
 	end
 end

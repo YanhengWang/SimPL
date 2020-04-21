@@ -1,9 +1,6 @@
 package simpl.parser.ast;
 
-import simpl.interpreter.RefValue;
-import simpl.interpreter.RuntimeError;
-import simpl.interpreter.State;
-import simpl.interpreter.Value;
+import simpl.interpreter.*;
 import simpl.typing.RefType;
 import simpl.typing.Substitution;
 import simpl.typing.Type;
@@ -33,13 +30,16 @@ public class Assign extends BinaryExpr {
                 throw new TypeError("Assigning incompatible types");
             }
         }else{
-            throw new TypeError("Dereferencing non-pointer");
+            throw new TypeError("Dereference non-pointer");
         }
     }
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        // TODO
-        return null;
+        RefValue v1 = (RefValue) l.eval(s);
+        int location = v1.p;
+        Value v2 = r.eval(s);
+        s.M.put(location, v2);
+        return UnitValue.UNIT;
     }
 }

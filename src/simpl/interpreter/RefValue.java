@@ -14,7 +14,10 @@ public class RefValue extends Value {
 
     @Override
     public boolean equals(Object other) {
-        // TODO
+        if(other instanceof RefValue){
+            RefValue v = (RefValue) other;
+            return p == v.p;
+        }
         return false;
     }
 }

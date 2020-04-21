@@ -28,7 +28,10 @@ public class Ref extends UnaryExpr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        // TODO
-        return null;
+        Value v = e.eval(s);
+        int location = s.p.get();
+        s.M.put(location, v);  //create a new memory cell
+        s.p.inc();  //increment the memory pointer
+        return new RefValue(location);
     }
 }

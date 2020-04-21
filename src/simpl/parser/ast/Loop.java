@@ -1,9 +1,6 @@
 package simpl.parser.ast;
 
-import simpl.interpreter.BoolValue;
-import simpl.interpreter.RuntimeError;
-import simpl.interpreter.State;
-import simpl.interpreter.Value;
+import simpl.interpreter.*;
 import simpl.typing.Substitution;
 import simpl.typing.Type;
 import simpl.typing.TypeEnv;
@@ -34,7 +31,11 @@ public class Loop extends Expr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        // TODO
-        return null;
+        BoolValue v = (BoolValue) e1.eval(s);
+        while(v.b){
+            e2.eval(s);
+            v = (BoolValue) e1.eval(s);
+        }
+        return UnitValue.UNIT;
     }
 }

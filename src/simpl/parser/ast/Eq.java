@@ -1,9 +1,6 @@
 package simpl.parser.ast;
 
-import simpl.interpreter.BoolValue;
-import simpl.interpreter.RuntimeError;
-import simpl.interpreter.State;
-import simpl.interpreter.Value;
+import simpl.interpreter.*;
 
 public class Eq extends EqExpr {
 
@@ -17,7 +14,8 @@ public class Eq extends EqExpr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        // TODO
-        return null;
+        Value v1 = l.eval(s);
+        Value v2 = r.eval(s);
+        return v1.equals(v2) ? BoolValue.TRUE : BoolValue.FALSE;
     }
 }

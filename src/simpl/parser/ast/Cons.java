@@ -1,9 +1,6 @@
 package simpl.parser.ast;
 
-import simpl.interpreter.ConsValue;
-import simpl.interpreter.RuntimeError;
-import simpl.interpreter.State;
-import simpl.interpreter.Value;
+import simpl.interpreter.*;
 import simpl.typing.*;
 
 public class Cons extends BinaryExpr {
@@ -33,7 +30,8 @@ public class Cons extends BinaryExpr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        // TODO
-        return null;
+        Value v1 = l.eval(s);
+        Value v2 = r.eval(s);
+        return new ConsValue(v1, v2);
     }
 }

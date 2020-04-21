@@ -2,9 +2,12 @@ package simpl.interpreter;
 
 public class BoolValue extends Value {
 
+    public static final BoolValue TRUE = new BoolValue(true);
+    public static final BoolValue FALSE = new BoolValue(false);
+
     public final boolean b;
 
-    public BoolValue(boolean b) {
+    private BoolValue(boolean b) {
         this.b = b;
     }
 
@@ -14,7 +17,10 @@ public class BoolValue extends Value {
 
     @Override
     public boolean equals(Object other) {
-        // TODO
+        if(other instanceof BoolValue){
+            BoolValue bool = (BoolValue) other;
+            return b == bool.b;
+        }
         return false;
     }
 }

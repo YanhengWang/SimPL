@@ -2,6 +2,7 @@ package simpl.parser.ast;
 
 import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
+import simpl.interpreter.UnitValue;
 import simpl.interpreter.Value;
 import simpl.typing.Type;
 import simpl.typing.TypeEnv;
@@ -21,6 +22,6 @@ public class Unit extends Expr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        return Value.UNIT;
+        return UnitValue.UNIT;
     }
 }

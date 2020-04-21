@@ -16,7 +16,7 @@ public class Interpreter {
 			Parser parser = new Parser(inp);
 			java_cup.runtime.Symbol parseTree = parser.parse();
 			Expr program = (Expr) parseTree.value;
-			System.out.println(program.typecheck(new DefaultTypeEnv()).t);
+		//	System.out.println(program.typecheck(new DefaultTypeEnv()).t);
 			System.out.println(program.eval(new InitialState()));
 		}
 		catch (SyntaxError e) {
@@ -42,10 +42,11 @@ public class Interpreter {
 
 	public static void main(String[] args) {
 		interpret("doc/examples/test.spl");
-	//	interpret("doc/examples/plus.spl");
+		interpret("doc/examples/plus.spl");
 	//	interpret("doc/examples/factorial.spl");
 	//	interpret("doc/examples/gcd1.spl");
-	//	interpret("doc/examples/gcd2.spl");
+		interpret("doc/examples/gcd2.spl");
+	//	interpret("doc/examples/true.spl");
 	//	interpret("doc/examples/max.spl");
 	//	interpret("doc/examples/sum.spl");
 	//	interpret("doc/examples/map.spl");

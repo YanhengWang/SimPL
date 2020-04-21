@@ -1,17 +1,16 @@
 package simpl.interpreter;
 
-class NilValue extends Value {
+public class NilValue extends Value {
 
-    protected NilValue() {
+    public static final NilValue NIL = new NilValue();
+
+    private NilValue() {
     }
 
-    public String toString() {
-        return "nil";
-    }
+    public String toString() { return "nil"; }
 
     @Override
     public boolean equals(Object other) {
-        // TODO
-        return false;
+        return other instanceof NilValue;
     }
 }

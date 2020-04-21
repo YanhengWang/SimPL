@@ -1,9 +1,10 @@
 package simpl.interpreter;
 
-class UnitValue extends Value {
+public class UnitValue extends Value {
 
-    protected UnitValue() {
-    }
+    public static final UnitValue UNIT = new UnitValue();
+
+    private UnitValue() { }
 
     public String toString() {
         return "unit";
@@ -11,7 +12,6 @@ class UnitValue extends Value {
 
     @Override
     public boolean equals(Object other) {
-        // TODO
-        return false;
+        return other instanceof UnitValue;
     }
 }

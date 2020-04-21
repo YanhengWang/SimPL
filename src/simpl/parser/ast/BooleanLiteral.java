@@ -28,6 +28,6 @@ public class BooleanLiteral extends Expr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        return new BoolValue(b);
+        return b ? BoolValue.TRUE : BoolValue.FALSE;
     }
 }

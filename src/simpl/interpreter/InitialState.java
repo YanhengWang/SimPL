@@ -12,11 +12,11 @@ import simpl.interpreter.pcf.succ;
 public class InitialState extends State {
 
     public InitialState() {
-        super(initialEnv(Env.empty), new Mem(), new Int(0));
+        super(initialEnv(), new Mem(), new Int(0));
     }
 
-    private static Env initialEnv(Env E) {
-        // TODO
-        return null;
+    private static Env initialEnv() {
+        return Env.empty;
+        // TODO: Take top-level functions into consideration.
     }
 }

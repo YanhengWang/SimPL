@@ -26,15 +26,13 @@ public class App extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        TypeResult t1 = l.typecheck(E);
-        TypeResult t2 = r.typecheck(E);
-        ArrowType tabs;
+        Type t1 = l.typecheck(E).t;
+        Type t2 = r.typecheck(E).t;
 
-        if(t1.t instanceof ArrowType){
-            tabs = (ArrowType)t1.t;
-            if(tabs.t1 == t2.t){
-                //match
-                return TypeResult.of(tabs.t2);
+        if(t1 instanceof ArrowType){
+            ArrowType t3 = (ArrowType)t1;
+            if(t3.t1.toString().equals(t2.toString())){
+                return TypeResult.of(t3.t2);
             }else{
                 throw new TypeError("Types of parameter and argument mismatch");
             }
@@ -45,7 +43,10 @@ public class App extends BinaryExpr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        // TODO
-        return null;
+        FunValue f = (FunValue) l.eval(s);
+        Value v = r.eval(s);
+        return f.e.eval(
+            State.of(new Env(f.E, f.x, v), s.M, s.p)
+        );  //call the function body under f's environment, with f.x maps to v
     }
 }
