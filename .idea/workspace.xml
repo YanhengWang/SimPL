@@ -5,44 +5,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Support basic evaluation scheme.&#10;Reduce memory allocation.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/examples/test2.spl" afterDir="false" />
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Polish the evaluation rules.&#10;Add built-in functions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/BoolValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/BoolValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/ConsValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/ConsValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/FunValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/FunValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/IntValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/IntValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/NilValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/NilValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/RecValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/RecValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/RefValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/RefValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/UnitValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/UnitValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Value.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Value.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/fst.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/fst.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/hd.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/hd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/snd.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/snd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/tl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/tl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/iszero.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/iszero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/pred.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/pred.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/succ.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/succ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/BooleanLiteral.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/BooleanLiteral.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Eq.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Eq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Fn.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Fn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Neq.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Neq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Unit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/examples/pcf.even.spl" beforeDir="false" afterPath="$PROJECT_DIR$/doc/examples/pcf.even.spl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/fst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Fst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/hd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Hd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/snd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Snd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/tl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Tl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/pcf/iszero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/pcf/IsZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/pcf/pred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/pcf/Pred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/pcf/succ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/pcf/Succ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Rec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Rec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587457755211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Polish the evaluation rules.&#10;Add built-in functions.">
+      <created>1587471071114</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587471071114</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,7 +174,8 @@
     <MESSAGE value="Basic type checker added." />
     <MESSAGE value="Basic type checker refined." />
     <MESSAGE value="Support basic evaluation scheme.&#10;Reduce memory allocation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Support basic evaluation scheme.&#10;Reduce memory allocation." />
+    <MESSAGE value="Polish the evaluation rules.&#10;Add built-in functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Polish the evaluation rules.&#10;Add built-in functions." />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Java" timestamp="1587358910189">
@@ -231,35 +207,35 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="447" y="285" width="472" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.696@0.0.1366.696" timestamp="1587374393657" />
-    <state width="1074" height="157" key="GridCell.Tab.0.bottom" timestamp="1587470216234">
+    <state width="1074" height="157" key="GridCell.Tab.0.bottom" timestamp="1587635657689">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="157" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1587457578391" />
-    <state width="1074" height="157" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1587470216234" />
-    <state width="1074" height="157" key="GridCell.Tab.0.center" timestamp="1587470216232">
+    <state width="1074" height="157" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1587635657689" />
+    <state width="1074" height="157" key="GridCell.Tab.0.center" timestamp="1587635657687">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="157" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1587457578389" />
-    <state width="1074" height="157" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1587470216232" />
-    <state width="1074" height="157" key="GridCell.Tab.0.left" timestamp="1587470216231">
+    <state width="1074" height="157" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1587635657687" />
+    <state width="1074" height="157" key="GridCell.Tab.0.left" timestamp="1587635657687">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="157" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1587457578388" />
-    <state width="1074" height="157" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1587470216231" />
-    <state width="1074" height="157" key="GridCell.Tab.0.right" timestamp="1587470216233">
+    <state width="1074" height="157" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1587635657687" />
+    <state width="1074" height="157" key="GridCell.Tab.0.right" timestamp="1587635657688">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="157" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1587457578390" />
-    <state width="1074" height="157" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1587470216233" />
+    <state width="1074" height="157" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1587635657688" />
     <state x="283" y="0" key="SettingsEditor" timestamp="1587359105934">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
-    <state x="283" y="143" key="Vcs.Push.Dialog.v2" timestamp="1587457760425">
+    <state x="283" y="143" key="Vcs.Push.Dialog.v2" timestamp="1587471074638">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1587376890171" />
-    <state x="283" y="143" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1587457760425" />
+    <state x="283" y="143" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1587471074638" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1587361985846">
       <screen x="0" y="0" width="1366" height="696" />
     </state>

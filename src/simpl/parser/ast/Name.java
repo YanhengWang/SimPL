@@ -32,7 +32,12 @@ public class Name extends Expr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        return s.E.get(x);
-        //TODO: Support recursion
+        Value v = s.E.get(x);
+        if(v instanceof RecValue) {
+            RecValue recValue = (RecValue) v;
+            Rec rec = new Rec(recValue.x, recValue.e);
+            return rec.eval(State.of(recValue.E, s.M, s.p));  //run it recursively
+        }
+        return v;
     }
 }

@@ -1,3 +1,13 @@
-rec even => fn n => if iszero n then true
+let iseven = (rec even => fn n => if iszero n then true
 		    else if iszero (pred n) then false
-		    else even (pred (pred n))
+		    else even (pred (pred n)))
+in
+	let l = ref nil in
+	let i = ref 0 in
+    	while !i < 10 do
+    		l := (iseven !i) :: !l;
+    		i := !i + 1
+    end;
+    !l
+    end
+end
