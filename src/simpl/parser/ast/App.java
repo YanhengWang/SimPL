@@ -26,19 +26,20 @@ public class App extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        Type t1 = l.typecheck(E).t;
-        Type t2 = r.typecheck(E).t;
+        //New constraint: {tl=tr->Y}
+        TypeResult resultL;
+        TypeResult resultR;
+        TypeVar Y = new TypeVar(true);
+        Substitution s1, s2, s3, s4;
 
-        if(t1 instanceof ArrowType){
-            ArrowType t3 = (ArrowType)t1;
-            if(t3.t1.toString().equals(t2.toString())){
-                return TypeResult.of(t3.t2);
-            }else{
-                throw new TypeError("Types of parameter and argument mismatch");
-            }
-        }else{
-            throw new TypeError("Applying non-function");
-        }
+        resultL = l.typecheck(E);
+        s1 = resultL.s;
+
+        resultR = r.typecheck(TypeEnv.embody(E,s1));
+        s2 = resultR.s;
+        s3 = s2.apply(resultL.t).unify(new ArrowType(resultR.t, Y));
+        s4 = s3.compose(s2.compose(s1));
+        return TypeResult.of(s4, s4.apply(Y));
     }
 
     @Override

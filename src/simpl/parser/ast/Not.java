@@ -22,10 +22,14 @@ public class Not extends UnaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        TypeResult t = e.typecheck(E);
-        if(t.t != Type.BOOL)
-            throw new TypeError("Taking logic not of non-bool");
-        return TypeResult.of(Type.BOOL);
+        //New constraint: {t=BOOL}
+        TypeResult result;
+        Substitution s1, s2;
+
+        result = e.typecheck(E);
+        s1 = result.s;
+        s2 = result.t.unify(Type.BOOL);    //t=BOOL
+        return TypeResult.of(s2.compose(s1), Type.BOOL);
     }
 
     @Override

@@ -5,9 +5,7 @@ import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
 import simpl.parser.Symbol;
-import simpl.typing.TypeEnv;
-import simpl.typing.TypeError;
-import simpl.typing.TypeResult;
+import simpl.typing.*;
 
 public class Let extends Expr {
 
@@ -26,9 +24,15 @@ public class Let extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        TypeResult t1 = e1.typecheck(E);
-        TypeResult t2 = e2.typecheck(TypeEnv.of(E, x, t1.t));
-        return t2;
+        TypeResult resultL;
+        TypeResult resultR;
+        Substitution s1, s2;
+
+        resultL = e1.typecheck(E);
+        s1 = resultL.s;
+        resultR = e2.typecheck(TypeEnv.embody(TypeEnv.of(E,x,resultL.t), s1));
+        s2 = resultR.s;
+        return TypeResult.of(s2.compose(s1), resultR.t);
     }
 
     @Override

@@ -6,12 +6,7 @@ import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
 import simpl.parser.Symbol;
-import simpl.typing.Substitution;
-import simpl.typing.Type;
-import simpl.typing.TypeEnv;
-import simpl.typing.TypeError;
-import simpl.typing.TypeResult;
-import simpl.typing.TypeVar;
+import simpl.typing.*;
 
 public class Rec extends Expr {
 
@@ -29,8 +24,12 @@ public class Rec extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        return null;
+        //New constraint: {t=X}
+        TypeVar X = new TypeVar(true);
+        TypeResult result = e.typecheck(TypeEnv.of(E, x, X));
+        Substitution s = result.t.unify(result.s.apply(X));    //t=X
+        Substitution ret = s.compose(result.s);
+        return TypeResult.of(ret, ret.apply(X));
     }
 
     @Override

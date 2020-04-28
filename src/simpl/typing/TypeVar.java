@@ -21,23 +21,24 @@ public class TypeVar extends Type {
 
     @Override
     public Substitution unify(Type t) throws TypeCircularityError {
-        // TODO
-        return null;
-    }
-
-    public String toString() {
-        return "" + name;
+        if(this == t)
+            return Substitution.IDENTITY;
+        if(t.contains(this))
+            throw new TypeCircularityError();
+        return new Substitution.Replace(this, t);
     }
 
     @Override
     public boolean contains(TypeVar tv) {
-        // TODO
-        return false;
+        return tv == this;
     }
 
     @Override
     public Type replace(TypeVar a, Type t) {
-        // TODO
-        return null;
+        return (a == this) ? t : this;
+    }
+
+    public String toString() {
+        return "" + name;
     }
 }

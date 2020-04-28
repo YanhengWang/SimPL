@@ -14,10 +14,20 @@ public abstract class ArithExpr extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        TypeResult t1 = l.typecheck(E);
-        TypeResult t2 = r.typecheck(E);
-        if(t1.t != Type.INT || t2.t != Type.INT)
-            throw new TypeError("Arithmetic operands don't have type int");
-        return TypeResult.of(Type.INT);
+        //New constraints: {tl=INT, tr=INT}
+        TypeResult resultL, resultR;
+        Substitution s1, s2, s3, s4, s5;
+
+        resultL = l.typecheck(E);
+        s1 = resultL.s;
+        s2 = resultL.t.unify(Type.INT);    //tl=INT
+        s3 = s2.compose(s1);    //s2(s1(.))
+
+        resultR = r.typecheck(TypeEnv.embody(E,s3));
+        s4 = resultR.s;
+        s5 = resultR.t.unify(Type.INT);    //tr=INT
+        return TypeResult.of(
+                s5.compose(s4.compose(s3)), Type.INT
+        );
     }
 }

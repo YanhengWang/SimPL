@@ -22,11 +22,19 @@ public class Loop extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        if(e1.typecheck(E).t == Type.BOOL) {
-            return TypeResult.of(e2.typecheck(E).t);
-        }else{
-            throw new TypeError("Type of condition is not bool");
-        }
+        //New constraints: {tl=Bool}
+        TypeResult resultL, resultR;
+        Substitution s1, s2, s3;
+
+        resultL = e1.typecheck(E);
+        s1 = resultL.s;
+        s2 = resultL.t.unify(Type.BOOL);    //tl=BOOL
+        s3 = s2.compose(s1);    //s2(s1(.))
+
+        resultR = e2.typecheck(TypeEnv.embody(E,s3));
+        return TypeResult.of(
+                resultR.s.compose(s3), Type.UNIT
+        );
     }
 
     @Override

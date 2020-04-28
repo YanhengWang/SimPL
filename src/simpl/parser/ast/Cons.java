@@ -15,17 +15,20 @@ public class Cons extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        Type t1 = l.typecheck(E).t;
-        Type t2 = r.typecheck(E).t;
-        if(t2 instanceof ListType){
-            Type t3 = ((ListType) t2).t;
-            if(t1.toString().equals(t3.toString()))
-                return TypeResult.of(t2);
-            else
-                throw new TypeError("Incompatible types among list elements");
-        }else{
-            throw new TypeError("List construction illegal");
-        }
+        //New constraint: {tr=LIST(tl)}
+        TypeResult resultL, resultR;
+        Substitution s1, s2, s3, s4;
+
+        resultL = l.typecheck(E);
+        s1 = resultL.s;
+
+        resultR = r.typecheck(TypeEnv.embody(E,s1));
+        s2 = resultR.s;
+        s3 = resultR.t.unify(new ListType(resultL.t));    //tr=LIST(tl)
+        s4 = s3.compose(s2.compose(s1));
+        return TypeResult.of(
+                s4, s4.apply(resultR.t)
+        );
     }
 
     @Override

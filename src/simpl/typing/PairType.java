@@ -1,5 +1,7 @@
 package simpl.typing;
 
+import simpl.parser.ast.Pair;
+
 public final class PairType extends Type {
 
     public Type t1, t2;
@@ -16,20 +18,27 @@ public final class PairType extends Type {
 
     @Override
     public Substitution unify(Type t) throws TypeError {
-        // TODO
-        return null;
+        if(t instanceof TypeVar)
+            return t.unify(this);
+        if(t instanceof PairType){
+            PairType pt = (PairType) t;
+            Substitution s1 = t1.unify(pt.t1);
+            Type t3 = s1.apply(t2);
+            Type t4 = s1.apply(pt.t2);
+            Substitution s2 = t3.unify(t4);
+            return s2.compose(s1);
+        }
+        throw new TypeMismatchError();
     }
 
     @Override
     public boolean contains(TypeVar tv) {
-        // TODO
-        return false;
+        return t1.contains(tv) || t2.contains(tv);
     }
 
     @Override
     public Type replace(TypeVar a, Type t) {
-        // TODO
-        return null;
+        return new PairType(t1.replace(a, t), t2.replace(a, t));
     }
 
     public String toString() {

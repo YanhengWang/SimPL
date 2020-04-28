@@ -22,14 +22,18 @@ public class Neg extends UnaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        TypeResult t = e.typecheck(E);
-        if(t.t != Type.INT)
-            throw new TypeError("Taking negation of non-int");
-        return TypeResult.of(Type.INT);
+        //New constraint: {t=INT}
+        TypeResult result;
+        Substitution s1, s2;
+
+        result = e.typecheck(E);
+        s1 = result.s;
+        s2 = result.t.unify(Type.INT);    //t=INT
+        return TypeResult.of(s2.compose(s1), Type.INT);
     }
 
     @Override
-    public Value eval(State s) throws RuntimeError {
+    public Value eval(State s) throws RuntimeError{
         IntValue v1 = (IntValue) e.eval(s);
         return new IntValue(-v1.n);
     }

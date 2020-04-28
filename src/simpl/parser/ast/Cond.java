@@ -26,16 +26,22 @@ public class Cond extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        if(e1.typecheck(E).t == Type.BOOL) {
-            Type t2 = e2.typecheck(E).t;
-            Type t3 = e3.typecheck(E).t;
-            if(t2.toString().equals(t3.toString()))
-                return TypeResult.of(t2);
-            else
-                throw new TypeError("Type of then-clause and else-clause don't match");
-        }else{
-            throw new TypeError("Type of condition is not bool");
-        }
+        //New constraints: {tl=BOOL, tm=tr}
+        TypeResult resultL, resultM, resultR;
+        Substitution s1, s2, s3, s4, s5;
+
+        resultL = e1.typecheck(E);
+        s1 = resultL.t.unify(Type.BOOL);    //tl=BOOL
+        s2 = s1.compose(resultL.s);    //s2(s1(.))
+
+        resultM = e2.typecheck(TypeEnv.embody(E,s2));
+        s3 = resultM.s.compose(s2);
+        resultR = e3.typecheck(TypeEnv.embody(E,s3));
+        s4 = resultR.s.compose(s3);
+        s5 = resultR.t.unify(s4.apply(resultM.t));    //tr=tm
+        return TypeResult.of(
+                s5.compose(s4), s5.apply(resultR.t)
+        );
     }
 
     @Override

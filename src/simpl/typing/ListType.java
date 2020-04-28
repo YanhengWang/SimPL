@@ -15,20 +15,23 @@ public final class ListType extends Type {
 
     @Override
     public Substitution unify(Type t) throws TypeError {
-        // TODO
-        return null;
+        if(t instanceof TypeVar)
+            return t.unify(this);
+        if(t instanceof ListType){
+            ListType lt = (ListType) t;
+            return this.t.unify(lt.t);
+        }
+        throw new TypeMismatchError();
     }
 
     @Override
     public boolean contains(TypeVar tv) {
-        // TODO
-        return false;
+        return t.contains(tv);
     }
 
     @Override
     public Type replace(TypeVar a, Type t) {
-        // TODO
-        return null;
+        return new ListType(this.t.replace(a, t));
     }
 
     public String toString() {

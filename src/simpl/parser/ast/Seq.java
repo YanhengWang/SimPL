@@ -20,8 +20,12 @@ public class Seq extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        l.typecheck(E);
-        return TypeResult.of(r.typecheck(E).t);
+        TypeResult resultL = l.typecheck(E);
+        TypeResult resultR = r.typecheck(TypeEnv.embody(E, resultL.s));
+        return TypeResult.of(
+                resultR.s.compose(resultL.s),
+                resultR.t
+        );
     }
 
     @Override

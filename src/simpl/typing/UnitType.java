@@ -12,12 +12,10 @@ final class UnitType extends Type {
 
     @Override
     public Substitution unify(Type t) throws TypeError {
-        if (t instanceof TypeVar) {
+        if (t instanceof TypeVar)
             return t.unify(this);
-        }
-        if (t instanceof UnitType) {
+        if (t instanceof UnitType)
             return Substitution.IDENTITY;
-        }
         throw new TypeMismatchError();
     }
 
@@ -28,7 +26,7 @@ final class UnitType extends Type {
 
     @Override
     public Type replace(TypeVar a, Type t) {
-        return Type.UNIT;
+        return this;
     }
 
     public String toString() {

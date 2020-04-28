@@ -5,12 +5,7 @@ import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
 import simpl.parser.Symbol;
-import simpl.typing.ArrowType;
-import simpl.typing.Type;
-import simpl.typing.TypeEnv;
-import simpl.typing.TypeError;
-import simpl.typing.TypeResult;
-import simpl.typing.TypeVar;
+import simpl.typing.*;
 
 public class Fn extends Expr {
 
@@ -23,14 +18,14 @@ public class Fn extends Expr {
     }
 
     public String toString() {
-        return "(fn " + x + "." + e + ")";
+        return "(λ" + x + "." + e + ")";
     }
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        // TODO
-        //TypeResult tsub = e.typecheck(TypeEnv.of(E, x, ));
-        return null;
+        TypeVar X = new TypeVar(true);
+        TypeResult result = e.typecheck(TypeEnv.of(E, x, X));
+        return TypeResult.of(result.s, new ArrowType(result.s.apply(X), result.t));
     }
 
     @Override

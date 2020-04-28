@@ -4,11 +4,7 @@ import simpl.interpreter.RefValue;
 import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
-import simpl.typing.RefType;
-import simpl.typing.Type;
-import simpl.typing.TypeEnv;
-import simpl.typing.TypeError;
-import simpl.typing.TypeResult;
+import simpl.typing.*;
 
 public class Ref extends UnaryExpr {
 
@@ -22,8 +18,8 @@ public class Ref extends UnaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        Type t = e.typecheck(E).t;
-        return TypeResult.of(new RefType(t));
+        TypeResult result = e.typecheck(E);
+        return TypeResult.of(result.s, new RefType(result.t));
     }
 
     @Override

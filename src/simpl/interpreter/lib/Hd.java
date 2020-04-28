@@ -15,10 +15,11 @@ public class Hd extends FunValue {
     public static final Hd hd = new Hd(
             new Expr() {
                 @Override
-                public TypeResult typecheck(TypeEnv E) throws TypeError {
-                    ArrowType t = new ArrowType(new PairType(Type.INT, Type.INT), Type.INT);
+                public TypeResult typecheck(TypeEnv E) {
+                    TypeVar T = new TypeVar(true);
+                    ListType listType = new ListType(T);
+                    ArrowType t = new ArrowType(listType, T);
                     return TypeResult.of(t);
-                    //TODO: support variant types
                 }
 
                 @Override

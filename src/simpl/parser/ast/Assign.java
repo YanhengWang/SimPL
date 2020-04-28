@@ -20,18 +20,19 @@ public class Assign extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        Type t1 = l.typecheck(E).t;
-        Type t2 = r.typecheck(E).t;
-        if(t1 instanceof RefType){
-            Type t3 = ((RefType)t1).t;  //retrieve the type being referenced
-            if(t3.toString().equals(t2.toString())) {
-                return TypeResult.of(Type.UNIT);
-            }else{
-                throw new TypeError("Assigning incompatible types");
-            }
-        }else{
-            throw new TypeError("Dereference non-pointer");
-        }
+        //New constraints: {tl=REF(tr)}
+        TypeResult resultL, resultR;
+        Substitution s1, s2, s3;
+
+        resultL = l.typecheck(E);
+        s1 = resultL.s;
+
+        resultR = r.typecheck(TypeEnv.embody(E,s1));
+        s2 = resultR.s;
+        s3 = s2.apply(resultL.t).unify(new RefType(resultR.t));    //tl=REF(tr)
+        return TypeResult.of(
+                s3.compose(s2.compose(s1)), Type.UNIT
+        );
     }
 
     @Override

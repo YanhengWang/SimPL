@@ -22,11 +22,21 @@ public class OrElse extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        TypeResult t1 = l.typecheck(E);
-        TypeResult t2 = r.typecheck(E);
-        if(t1.t != Type.BOOL || t2.t != Type.BOOL)
-            throw new TypeError("Operands of orElse are not booleans");
-        return TypeResult.of(Type.BOOL);
+        //New constraints: {t1=BOOL, t2=BOOL}
+        TypeResult resultL, resultR;
+        Substitution s1, s2, s3, s4, s5;
+
+        resultL = l.typecheck(E);
+        s1 = resultL.s;
+        s2 = resultL.t.unify(Type.BOOL);    //tl=BOOL
+        s3 = s2.compose(s1);    //s2(s1(.))
+
+        resultR = r.typecheck(TypeEnv.embody(E,s3));
+        s4 = resultR.s;
+        s5 = resultR.t.unify(Type.BOOL);    //tr=BOOL
+        return TypeResult.of(
+                s5.compose(s4.compose(s3)), Type.BOOL
+        );
     }
 
     @Override

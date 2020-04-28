@@ -26,7 +26,7 @@ public class Name extends Expr {
     public TypeResult typecheck(TypeEnv E) throws TypeError {
         Type t = E.get(x);
         if(t == null)
-            throw new TypeError("Symbol " + x + " doesn't have type");
+            throw new TypeError("Symbol " + x + " is free");
         return TypeResult.of(t);
     }
 

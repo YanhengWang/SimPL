@@ -16,14 +16,15 @@ public class Snd extends FunValue {
     public static final Snd snd = new Snd(
             new Expr() {
                 @Override
-                public TypeResult typecheck(TypeEnv E) throws TypeError {
-                    ArrowType t = new ArrowType(new PairType(Type.INT, Type.INT), Type.INT);
+                public TypeResult typecheck(TypeEnv E) {
+                    TypeVar T1 = new TypeVar(true);
+                    TypeVar T2 = new TypeVar(true);
+                    ArrowType t = new ArrowType(new PairType(T1, T2), T2);
                     return TypeResult.of(t);
-                    //TODO: support variant types
                 }
 
                 @Override
-                public Value eval(State s) throws RuntimeError {
+                public Value eval(State s) {
                     PairValue p = (PairValue) s.E.get(sym);
                     return p.v2;
                 }
