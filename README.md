@@ -47,7 +47,7 @@ Even though SimPL is a strongly-typed language, users are not expected to annota
 
 ### Typing Rules
 
-![](http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}}=\\sum_{i:r(i,j)=1}{\\big((\\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\\big)x_k^{(i)}}+\\lambda \\xtheta_k^{(j)})
+![]("http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}}=\\sum_{i:r(i,j)=1}{\\big((\\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\\big)x_k^{(i)}}+\\lambda \\xtheta_k^{(j)}")
 
 ### Operational Semantics
 
@@ -60,12 +60,12 @@ Even though SimPL is a strongly-typed language, users are not expected to annota
 ```ocaml
 let f = (fn x => x*x) in
 let y = ref 1 in
-	let i = ref 0 in
-		while !i < 10 do
-			y := f(!y);
-			i := !i + 1
-	end;
-	!y
+  let i = ref 0 in
+    while !i < 10 do
+      y := f(!y);
+      i := !i + 1
+  end;
+  !y
 end
 end
 ```
@@ -74,13 +74,13 @@ end
 
 ```ocaml
 let iter =
-		rec g => fn f => fn i =>
-			if i = 10 then 1
-			else f (g f (i+1))
+  rec g => fn f => fn i =>
+    if i = 10 then 1
+    else f (g f (i+1))
 in
-	let f = (fn x => x*x) in
-		iter f 0
-	end
+  let f = (fn x => x*x) in
+     iter f 0
+  end
 end
 ```
 
