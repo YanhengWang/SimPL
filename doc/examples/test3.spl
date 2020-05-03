@@ -7,5 +7,11 @@ rec m => fn x => fn y =>
 	if iszero y then x
 	else m (pred x) (pred y)
 *)
-fn x =>
-	if x 10 > 10 then true else false
+let double =
+	fn f => fn x => f (f x)
+in
+let neg = (fn b => not b) in
+	(double succ 10);
+	(double neg true)
+end
+end

@@ -1,7 +1,5 @@
 package simpl.typing;
 
-import simpl.parser.ast.Pair;
-
 public final class PairType extends Type {
 
     public Type t1, t2;

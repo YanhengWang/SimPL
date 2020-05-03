@@ -6,12 +6,12 @@ public class TypeVar extends Type {
 
     private static int tvcnt = 0;
 
-    private boolean equalityType;
-    private Symbol name;
+    private final boolean equalityType;
+    public final Symbol name;
 
     public TypeVar(boolean equalityType) {
         this.equalityType = equalityType;
-        name = Symbol.symbol("tv" + ++tvcnt);
+        name = Symbol.symbol("X" + ++tvcnt);
     }
 
     @Override

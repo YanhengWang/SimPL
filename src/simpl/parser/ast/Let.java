@@ -26,11 +26,13 @@ public class Let extends Expr {
     public TypeResult typecheck(TypeEnv E) throws TypeError {
         TypeResult resultL;
         TypeResult resultR;
+        PolyType polyType;
         Substitution s1, s2;
 
         resultL = e1.typecheck(E);
         s1 = resultL.s;
-        resultR = e2.typecheck(TypeEnv.embody(TypeEnv.of(E,x,resultL.t), s1));
+        polyType = new PolyType(resultL.t, E);    //create let-polymorphism
+        resultR = e2.typecheck(TypeEnv.embody(TypeEnv.of(E,x,polyType), s1));
         s2 = resultR.s;
         return TypeResult.of(s2.compose(s1), resultR.t);
     }

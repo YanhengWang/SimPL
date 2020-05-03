@@ -5,10 +5,7 @@ import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
 import simpl.parser.Symbol;
-import simpl.typing.Type;
-import simpl.typing.TypeEnv;
-import simpl.typing.TypeError;
-import simpl.typing.TypeResult;
+import simpl.typing.*;
 
 public class Name extends Expr {
 
@@ -27,6 +24,8 @@ public class Name extends Expr {
         Type t = E.get(x);
         if(t == null)
             throw new TypeError("Symbol " + x + " is free");
+        if(t instanceof PolyType)
+            return TypeResult.of(((PolyType) t).instantiate());    //instantiate according to type scheme
         return TypeResult.of(t);
     }
 

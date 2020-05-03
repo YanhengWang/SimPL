@@ -9,6 +9,8 @@ import simpl.interpreter.pcf.Pred;
 import simpl.interpreter.pcf.Succ;
 import simpl.parser.Symbol;
 
+import java.util.HashSet;
+
 public class DefaultTypeEnv extends TypeEnv {
 
     private TypeEnv E;
@@ -31,5 +33,10 @@ public class DefaultTypeEnv extends TypeEnv {
     @Override
     public Type get(Symbol x) {
         return E.get(x);
+    }
+
+    @Override
+    public HashSet<TypeVar> typeVariables(){
+        return E.typeVariables();
     }
 }
