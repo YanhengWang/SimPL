@@ -47,7 +47,7 @@ Even though SimPL is a strongly-typed language, users are not expected to annota
 
 ### Typing Rules
 
-
+![](http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}}=\\sum_{i:r(i,j)=1}{\\big((\\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\\big)x_k^{(i)}}+\\lambda \\xtheta_k^{(j)})
 
 ### Operational Semantics
 
