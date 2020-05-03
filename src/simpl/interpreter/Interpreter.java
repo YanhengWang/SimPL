@@ -17,7 +17,7 @@ public class Interpreter {
 			java_cup.runtime.Symbol parseTree = parser.parse();
 			Expr program = (Expr) parseTree.value;
 			System.out.println(program.typecheck(new DefaultTypeEnv()).t);
-		//	System.out.println(program.eval(new InitialState()));
+			System.out.println(program.eval(new InitialState()));
 		}
 		catch (SyntaxError e) {
 			System.out.println("syntax error");
@@ -41,8 +41,9 @@ public class Interpreter {
 	}
 
 	public static void main(String[] args) {
-	//	interpret("doc/examples/test3.spl");
-	//	interpret("doc/examples/test2.spl");
+		interpret("doc/examples/test3.spl");
+		interpret("doc/examples/test2.spl");
+		/*interpret("doc/examples/test.spl");
 		interpret("doc/examples/plus.spl");
 		interpret("doc/examples/factorial.spl");
 		interpret("doc/examples/gcd1.spl");
@@ -56,6 +57,6 @@ public class Interpreter {
 		interpret("doc/examples/pcf.factorial.spl");
 		interpret("doc/examples/pcf.fibonacci.spl");
 		interpret("doc/examples/pcf.twice.spl");
-		interpret("doc/examples/pcf.lists.spl");
+		interpret("doc/examples/pcf.lists.spl");*/
 	}
 }
