@@ -19,7 +19,7 @@ public class Fst extends FunValue {
                     TypeVar T1 = new TypeVar(true);
                     TypeVar T2 = new TypeVar(true);
                     ArrowType t = new ArrowType(new PairType(T1, T2), T1);
-                    return TypeResult.of(t);
+                    return TypeResult.of(new PolyType(t, E));
                 }
 
                 @Override

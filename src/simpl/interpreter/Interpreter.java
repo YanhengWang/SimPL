@@ -41,9 +41,9 @@ public class Interpreter {
 	}
 
 	public static void main(String[] args) {
-		interpret("doc/examples/test3.spl");
-		interpret("doc/examples/test2.spl");
-		interpret("doc/examples/test.spl");
+		interpret("doc/examples/polymorphism.spl");
+		interpret("doc/examples/list.spl");
+		interpret("doc/examples/reference.spl");
 		interpret("doc/examples/plus.spl");
 		interpret("doc/examples/factorial.spl");
 		interpret("doc/examples/gcd1.spl");

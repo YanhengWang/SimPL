@@ -5,11 +5,13 @@ import java.util.Set;
 
 public class PolyType extends Type{
 	private final Type scheme;
+	private final TypeEnv env;
 	private final HashSet<TypeVar> boundVar;
 	private final HashSet<TypeVar> freeVar = new HashSet<TypeVar>();
 
 	public PolyType(Type scheme, TypeEnv env) {
 		this.scheme = scheme;
+		this.env = env;
 		boundVar = env.typeVariables();
 		collectFreeVar(scheme);
 	}
@@ -48,7 +50,7 @@ public class PolyType extends Type{
 
 	@Override
 	public Type replace(TypeVar a, Type t) {
-		return this;    //we don't allow the replacement inside type scheme
+		return new PolyType(scheme.replace(a, t), env);
 	}
 
 	public Type instantiate(){

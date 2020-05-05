@@ -31,8 +31,14 @@ public class Let extends Expr {
 
         resultL = e1.typecheck(E);
         s1 = resultL.s;
-        polyType = new PolyType(resultL.t, E);    //create let-polymorphism
-        resultR = e2.typecheck(TypeEnv.embody(TypeEnv.of(E,x,polyType), s1));
+        if(resultL.t instanceof RefType){
+            //don't create let-polymorphism
+            resultR = e2.typecheck(TypeEnv.embody(TypeEnv.of(E,x,resultL.t), s1));
+        } else {
+            //create let-polymorphism
+            polyType = new PolyType(resultL.t, E);
+            resultR = e2.typecheck(TypeEnv.embody(TypeEnv.of(E, x, polyType), s1));
+        }
         s2 = resultR.s;
         return TypeResult.of(s2.compose(s1), resultR.t);
     }

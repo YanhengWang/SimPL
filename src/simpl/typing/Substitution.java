@@ -20,6 +20,8 @@ public abstract class Substitution {
             this.t = t;
         }
         public Type apply(Type b) {
+            if(b == null)
+                return null;
             return b.replace(a, t);
         }
     }

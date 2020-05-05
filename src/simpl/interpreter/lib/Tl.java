@@ -19,7 +19,7 @@ public class Tl extends FunValue {
                     TypeVar T = new TypeVar(true);
                     ListType listType = new ListType(T);
                     ArrowType t = new ArrowType(listType, listType);
-                    return TypeResult.of(t);
+                    return TypeResult.of(new PolyType(t, E));
                 }
 
                 @Override
