@@ -1,9 +1,6 @@
 package simpl.interpreter;
 
-import simpl.interpreter.lib.Fst;
-import simpl.interpreter.lib.Hd;
-import simpl.interpreter.lib.Snd;
-import simpl.interpreter.lib.Tl;
+import simpl.interpreter.lib.*;
 import simpl.interpreter.pcf.IsZero;
 import simpl.interpreter.pcf.Pred;
 import simpl.interpreter.pcf.Succ;
@@ -24,6 +21,7 @@ public class InitialState extends State {
         ret = new Env(ret, Symbol.symbol("pred"), Pred.pred);
         ret = new Env(ret, Symbol.symbol("succ"), Succ.succ);
         ret = new Env(ret, Symbol.symbol("iszero"), IsZero.iszero);
+        ret = new Env(ret, Symbol.symbol("gc"), GC.gc);
         return ret;
     }
 }

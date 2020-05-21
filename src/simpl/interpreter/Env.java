@@ -1,6 +1,7 @@
 package simpl.interpreter;
 
 import simpl.parser.Symbol;
+import java.util.HashSet;
 
 public class Env {
 
@@ -15,12 +16,9 @@ public class Env {
     }
 
     public static Env empty = new Env() {
+        @Override
         public Value get(Symbol y) {
             return null;
-        }
-
-        public Env clone() {
-            return this;
         }
     };
 
@@ -36,8 +34,10 @@ public class Env {
         return E.get(y);
     }
 
-    public Env clone() {
-        // TODO
-        return null;
+    public HashSet<Integer> refSet(){
+        HashSet<Integer> ret = new HashSet<>();
+        for(Env env=this; env!=empty && env!=null; env=env.E)
+            ret.addAll(env.v.refSet());
+        return ret;
     }
 }

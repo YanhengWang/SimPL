@@ -3,6 +3,8 @@ package simpl.interpreter;
 import simpl.parser.Symbol;
 import simpl.parser.ast.Expr;
 
+import java.util.HashSet;
+
 public class RecValue extends Value {
 
     public final Env E;
@@ -18,5 +20,10 @@ public class RecValue extends Value {
     @Override
     public boolean equals(Object other) {
         return false;
+    }
+
+    @Override
+    public HashSet<Integer> refSet(){
+        return E.refSet();
     }
 }

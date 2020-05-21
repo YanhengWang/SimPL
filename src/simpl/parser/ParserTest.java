@@ -25,7 +25,7 @@ public class ParserTest {
 		parse("doc/examples/gcd2.spl");
 		parse("doc/examples/max.spl");
 		parse("doc/examples/sum.spl");
-		parse("doc/examples/true.spl");
+		parse("doc/examples/mutualRec.spl");
 		parse("doc/examples/pcf.sum.spl");
 		parse("doc/examples/pcf.even.spl");
 		parse("doc/examples/pcf.twice.spl");

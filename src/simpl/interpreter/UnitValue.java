@@ -1,10 +1,12 @@
 package simpl.interpreter;
 
+import java.util.HashSet;
+
 public class UnitValue extends Value {
 
     public static final UnitValue UNIT = new UnitValue();
 
-    private UnitValue() { }
+    public UnitValue() { }
 
     public String toString() {
         return "unit";
@@ -13,5 +15,14 @@ public class UnitValue extends Value {
     @Override
     public boolean equals(Object other) {
         return other instanceof UnitValue;
+    }
+
+    @Override
+    public HashSet<Integer> refSet(){
+        return new HashSet<>();
+    }
+
+    public void takeAction(State s){
+        return;    //default: do nothing
     }
 }

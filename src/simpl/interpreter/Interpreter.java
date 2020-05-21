@@ -19,9 +19,6 @@ public class Interpreter {
 			System.out.println(program.typecheck(new DefaultTypeEnv()).t);
 			System.out.println(program.eval(new InitialState()));
 		}
-		catch (SyntaxError e) {
-			System.out.println("syntax error");
-		}
 		catch (TypeError e) {
 			System.out.println("type error");
 			System.out.println(e.getMessage());
@@ -30,6 +27,7 @@ public class Interpreter {
 			System.out.println("runtime error");
 		}
 		catch (Exception e) {
+			//System.out.println("syntax error");
 			e.printStackTrace(System.err);
 		}
 	}
@@ -41,22 +39,24 @@ public class Interpreter {
 	}
 
 	public static void main(String[] args) {
-		interpret("doc/examples/polymorphism.spl");
-		interpret("doc/examples/list.spl");
-		interpret("doc/examples/reference.spl");
-		interpret("doc/examples/plus.spl");
-		interpret("doc/examples/factorial.spl");
-		interpret("doc/examples/gcd1.spl");
-		interpret("doc/examples/gcd2.spl");
-		interpret("doc/examples/max.spl");
-		interpret("doc/examples/sum.spl");
-		interpret("doc/examples/map.spl");
-		interpret("doc/examples/pcf.sum.spl");
-		interpret("doc/examples/pcf.even.spl");
-		interpret("doc/examples/pcf.minus.spl");
-		interpret("doc/examples/pcf.factorial.spl");
-		interpret("doc/examples/pcf.fibonacci.spl");
-		interpret("doc/examples/pcf.twice.spl");
-	//	interpret("doc/examples/pcf.lists.spl");
+		interpret("examples/gc.spl");
+	/*	interpret("examples/mutualRec.spl");
+		interpret("examples/polymorphism.spl");
+		interpret("examples/list.spl");
+		interpret("examples/reference.spl");
+		interpret("examples/plus.spl");
+		interpret("examples/factorial.spl");
+		interpret("examples/gcd1.spl");
+		interpret("examples/gcd2.spl");
+		interpret("examples/max.spl");
+		interpret("examples/sum.spl");
+		interpret("examples/map.spl");
+		interpret("examples/pcf.sum.spl");
+		interpret("examples/pcf.even.spl");
+		interpret("examples/pcf.minus.spl");
+		interpret("examples/pcf.factorial.spl");
+		interpret("examples/pcf.fibonacci.spl");
+		interpret("examples/pcf.twice.spl");
+		interpret("examples/pcf.lists.spl");*/
 	}
 }

@@ -1,1 +1,0 @@
-(fn t => t t (true)) if t then t else t if t then t else t

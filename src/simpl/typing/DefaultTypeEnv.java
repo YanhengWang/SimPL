@@ -1,12 +1,7 @@
 package simpl.typing;
 
-import simpl.interpreter.lib.Fst;
-import simpl.interpreter.lib.Hd;
-import simpl.interpreter.lib.Snd;
-import simpl.interpreter.lib.Tl;
-import simpl.interpreter.pcf.IsZero;
-import simpl.interpreter.pcf.Pred;
-import simpl.interpreter.pcf.Succ;
+import simpl.interpreter.lib.*;
+import simpl.interpreter.pcf.*;
 import simpl.parser.Symbol;
 
 import java.util.HashSet;
@@ -25,6 +20,7 @@ public class DefaultTypeEnv extends TypeEnv {
             E = TypeEnv.of(E, Symbol.symbol("pred"), Pred.pred.e.typecheck(TypeEnv.empty).t);
             E = TypeEnv.of(E, Symbol.symbol("succ"), Succ.succ.e.typecheck(TypeEnv.empty).t);
             E = TypeEnv.of(E, Symbol.symbol("iszero"), IsZero.iszero.e.typecheck(TypeEnv.empty).t);
+            E = TypeEnv.of(E, Symbol.symbol("gc"), UnitType.UNIT);
         }catch(TypeError e){
             System.out.println("Impossible");
         }

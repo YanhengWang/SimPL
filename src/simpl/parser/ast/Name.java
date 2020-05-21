@@ -1,9 +1,6 @@
 package simpl.parser.ast;
 
-import simpl.interpreter.RecValue;
-import simpl.interpreter.RuntimeError;
-import simpl.interpreter.State;
-import simpl.interpreter.Value;
+import simpl.interpreter.*;
 import simpl.parser.Symbol;
 import simpl.typing.*;
 
@@ -35,7 +32,9 @@ public class Name extends Expr {
         if(v instanceof RecValue) {
             RecValue recValue = (RecValue) v;
             Rec rec = new Rec(recValue.x, recValue.e);
-            return rec.eval(State.of(recValue.E, s.M, s.p));  //run it recursively
+            return rec.eval(State.of(recValue.E, s.M, s.p));    //run it recursively
+        }else if(v instanceof UnitValue){
+            ((UnitValue) v).takeAction(s);
         }
         return v;
     }

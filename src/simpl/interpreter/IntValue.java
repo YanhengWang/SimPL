@@ -1,5 +1,7 @@
 package simpl.interpreter;
 
+import java.util.HashSet;
+
 public class IntValue extends Value {
 
     public final int n;
@@ -19,5 +21,10 @@ public class IntValue extends Value {
             return n == v.n;
         }
         return false;
+    }
+
+    @Override
+    public HashSet<Integer> refSet(){
+        return new HashSet<>();
     }
 }

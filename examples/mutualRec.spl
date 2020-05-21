@@ -1,0 +1,11 @@
+let fg = rec p => (
+	(fn x => if x = 0 then true else if x = 1 then false else (snd p) (x-1)),
+	(fn x => if x = 0 then false else if x = 1 then true else (fst p) (x-1))
+)
+in
+	let isEven = fst fg in
+	let isOdd = snd fg in
+		(isEven 1202, isOdd 1202)
+	end
+	end
+end

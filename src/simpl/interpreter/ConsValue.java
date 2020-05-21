@@ -1,5 +1,7 @@
 package simpl.interpreter;
 
+import java.util.HashSet;
+
 public class ConsValue extends Value {
 
     public final Value v1, v2;
@@ -20,5 +22,12 @@ public class ConsValue extends Value {
             return (v1.equals(v.v1) && v2.equals(v.v2));
         }
         return false;
+    }
+
+    @Override
+    public HashSet<Integer> refSet(){
+        HashSet<Integer> ret = v1.refSet();
+        ret.addAll(v2.refSet());
+        return ret;
     }
 }
