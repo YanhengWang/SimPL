@@ -5,46 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Support garbage collection">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/BoolValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/BoolValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/ConsValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/ConsValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Env$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Env$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Env.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Env.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/FunValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/FunValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/IntValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/IntValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Mem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Mem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/NilValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/NilValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/RecValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/RecValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/RefValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/RefValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/UnitValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/UnitValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Value.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Value.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Assign.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Assign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Deref.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Deref.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Ref.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Ref.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/gc.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/gc.spl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/BoolValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/ConsValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/ConsValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Env.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Env.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/FunValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/FunValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/IntValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Mem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Mem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/NilValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/NilValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/PairValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/PairValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/RecValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/RecValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/RefValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/RefValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/UnitValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/UnitValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/GC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Gc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" afterDir="false" />
-    </list>
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Support garbage collection" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590038899556</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Support garbage collection">
+      <created>1590049131925</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1590049131925</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,55 +304,55 @@
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.673@0.23.1366.673" timestamp="1590038422439" />
-    <state width="1081" height="111" key="GridCell.Tab.0.bottom" timestamp="1590049053647">
+    <state width="1081" height="175" key="GridCell.Tab.0.bottom" timestamp="1590049153144">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="144" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1588664203441" />
-    <state width="1081" height="111" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590049053647" />
-    <state width="1081" height="111" key="GridCell.Tab.0.center" timestamp="1590049053646">
+    <state width="1081" height="175" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590049153144" />
+    <state width="1081" height="175" key="GridCell.Tab.0.center" timestamp="1590049153143">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="144" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1588664203439" />
-    <state width="1081" height="111" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1590049053646" />
-    <state width="1081" height="111" key="GridCell.Tab.0.left" timestamp="1590049053645">
+    <state width="1081" height="175" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1590049153143" />
+    <state width="1081" height="175" key="GridCell.Tab.0.left" timestamp="1590049153143">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="144" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1588664203439" />
-    <state width="1081" height="111" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1590049053645" />
-    <state width="1081" height="111" key="GridCell.Tab.0.right" timestamp="1590049053646">
+    <state width="1081" height="175" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1590049153143" />
+    <state width="1081" height="175" key="GridCell.Tab.0.right" timestamp="1590049153144">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="144" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1588664203440" />
-    <state width="1081" height="111" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1590049053646" />
-    <state width="1081" height="175" key="GridCell.Tab.1.bottom" timestamp="1590031055342">
+    <state width="1081" height="175" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1590049153144" />
+    <state width="1081" height="175" key="GridCell.Tab.1.bottom" timestamp="1590049153145">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="175" key="GridCell.Tab.1.bottom/0.0.1366.696@0.0.1366.696" timestamp="1588663717519" />
-    <state width="1081" height="175" key="GridCell.Tab.1.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590031055342" />
-    <state width="1081" height="175" key="GridCell.Tab.1.center" timestamp="1590031055341">
+    <state width="1081" height="175" key="GridCell.Tab.1.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590049153145" />
+    <state width="1081" height="175" key="GridCell.Tab.1.center" timestamp="1590049153145">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="175" key="GridCell.Tab.1.center/0.0.1366.696@0.0.1366.696" timestamp="1588663717517" />
-    <state width="1081" height="175" key="GridCell.Tab.1.center/0.23.1366.673@0.23.1366.673" timestamp="1590031055341" />
-    <state width="1081" height="175" key="GridCell.Tab.1.left" timestamp="1590031055341">
+    <state width="1081" height="175" key="GridCell.Tab.1.center/0.23.1366.673@0.23.1366.673" timestamp="1590049153145" />
+    <state width="1081" height="175" key="GridCell.Tab.1.left" timestamp="1590049153145">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="175" key="GridCell.Tab.1.left/0.0.1366.696@0.0.1366.696" timestamp="1588663717516" />
-    <state width="1081" height="175" key="GridCell.Tab.1.left/0.23.1366.673@0.23.1366.673" timestamp="1590031055341" />
-    <state width="1081" height="175" key="GridCell.Tab.1.right" timestamp="1590031055342">
+    <state width="1081" height="175" key="GridCell.Tab.1.left/0.23.1366.673@0.23.1366.673" timestamp="1590049153145" />
+    <state width="1081" height="175" key="GridCell.Tab.1.right" timestamp="1590049153145">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="175" key="GridCell.Tab.1.right/0.0.1366.696@0.0.1366.696" timestamp="1588663717518" />
-    <state width="1081" height="175" key="GridCell.Tab.1.right/0.23.1366.673@0.23.1366.673" timestamp="1590031055342" />
+    <state width="1081" height="175" key="GridCell.Tab.1.right/0.23.1366.673@0.23.1366.673" timestamp="1590049153145" />
     <state x="283" y="0" key="SettingsEditor" timestamp="1587359105934">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1590038903294">
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1590049133643">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1588664161627" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1590038903294" />
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1590049133643" />
     <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590038918529">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
