@@ -1,10 +1,8 @@
 package simpl.interpreter;
 
 import simpl.parser.Symbol;
-import java.util.HashSet;
 
 public class Env {
-
     private final Env E;
     private final Symbol x;
     private final Value v;
@@ -29,15 +27,15 @@ public class Env {
     }
 
     public Value get(Symbol y) {
-        if(y == x)
-            return v;
-        return E.get(y);
+        for(Env env=this; env!=null; env=env.E){
+            if(y == env.x)
+                return env.v;
+        }
+        return null;
     }
 
-    public HashSet<Integer> refSet(){
-        HashSet<Integer> ret = new HashSet<>();
+    public void markMemory(Mem M){
         for(Env env=this; env!=empty && env!=null; env=env.E)
-            ret.addAll(env.v.refSet());
-        return ret;
+            env.v.markMemory(M);
     }
 }

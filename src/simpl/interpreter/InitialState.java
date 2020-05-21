@@ -10,6 +10,7 @@ public class InitialState extends State {
 
     public InitialState() {
         super(initialEnv(), new Mem(), new Int(0));
+        State.rootList.clear();
     }
 
     private static Env initialEnv() {
@@ -21,7 +22,7 @@ public class InitialState extends State {
         ret = new Env(ret, Symbol.symbol("pred"), Pred.pred);
         ret = new Env(ret, Symbol.symbol("succ"), Succ.succ);
         ret = new Env(ret, Symbol.symbol("iszero"), IsZero.iszero);
-        ret = new Env(ret, Symbol.symbol("gc"), GC.gc);
+        ret = new Env(ret, Symbol.symbol("gc"), Gc.gc);
         return ret;
     }
 }

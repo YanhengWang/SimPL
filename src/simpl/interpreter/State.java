@@ -1,10 +1,13 @@
 package simpl.interpreter;
 
+import java.util.Stack;
+
 public class State {
 
     public final Env E;
     public final Mem M;
     public final Int p;
+    public static final Stack<Value> rootList = new Stack<>();
 
     protected State(Env E, Mem M, Int p) {
         this.E = E;

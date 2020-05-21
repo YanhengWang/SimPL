@@ -1,7 +1,5 @@
 package simpl.interpreter;
 
-import java.util.HashSet;
-
 public class RefValue extends Value {
 
     public final int p;
@@ -24,9 +22,10 @@ public class RefValue extends Value {
     }
 
     @Override
-    public HashSet<Integer> refSet(){
-        HashSet<Integer> ret = new HashSet<>();
-        ret.add(p);
-        return ret;
+    public void markMemory(Mem M){
+        if(!M.hasMarked(p)){
+            M.mark(p);
+            M.get(p).markMemory(M);    //mark the value stored in p, recursively
+        }
     }
 }

@@ -1,8 +1,8 @@
 package simpl.interpreter;
 
-import java.util.HashSet;
-
 public abstract class Value {
     public abstract boolean equals(Object other);
-    public abstract HashSet<Integer> refSet();
+    public void markMemory(Mem M){
+        return;    //default: do nothing
+    }
 }

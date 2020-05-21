@@ -28,7 +28,7 @@ public class FunValue extends Value {
     }
 
     @Override
-    public HashSet<Integer> refSet(){
-        return E.refSet();
+    public void markMemory(Mem M){
+        E.markMemory(M);
     }
 }

@@ -1,7 +1,5 @@
 package simpl.interpreter;
 
-import java.util.HashSet;
-
 public class ConsValue extends Value {
 
     public final Value v1, v2;
@@ -25,9 +23,8 @@ public class ConsValue extends Value {
     }
 
     @Override
-    public HashSet<Integer> refSet(){
-        HashSet<Integer> ret = v1.refSet();
-        ret.addAll(v2.refSet());
-        return ret;
+    public void markMemory(Mem M){
+        v1.markMemory(M);
+        v2.markMemory(M);
     }
 }

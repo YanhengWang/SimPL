@@ -17,11 +17,6 @@ public class UnitValue extends Value {
         return other instanceof UnitValue;
     }
 
-    @Override
-    public HashSet<Integer> refSet(){
-        return new HashSet<>();
-    }
-
     public void takeAction(State s){
         return;    //default: do nothing
     }

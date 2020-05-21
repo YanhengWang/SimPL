@@ -3,8 +3,6 @@ package simpl.interpreter;
 import simpl.parser.Symbol;
 import simpl.parser.ast.Expr;
 
-import java.util.HashSet;
-
 public class RecValue extends Value {
 
     public final Env E;
@@ -23,7 +21,7 @@ public class RecValue extends Value {
     }
 
     @Override
-    public HashSet<Integer> refSet(){
-        return E.refSet();
+    public void markMemory(Mem M){
+        E.markMemory(M);
     }
 }

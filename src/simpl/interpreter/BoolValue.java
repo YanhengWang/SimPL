@@ -1,7 +1,5 @@
 package simpl.interpreter;
 
-import java.util.HashSet;
-
 public class BoolValue extends Value {
 
     public static final BoolValue TRUE = new BoolValue(true);
@@ -24,10 +22,5 @@ public class BoolValue extends Value {
             return b == bool.b;
         }
         return false;
-    }
-
-    @Override
-    public HashSet<Integer> refSet(){
-        return new HashSet<>();
     }
 }
