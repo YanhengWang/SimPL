@@ -23,6 +23,8 @@ public class InitialState extends State {
         ret = new Env(ret, Symbol.symbol("succ"), Succ.succ);
         ret = new Env(ret, Symbol.symbol("iszero"), IsZero.iszero);
         ret = new Env(ret, Symbol.symbol("gc"), Gc.gc);
+        ret = new Env(ret, Symbol.symbol("print"), Print.print);
+        ret = new Env(ret, Symbol.symbol("toStream"), ToStream.toStream);
         return ret;
     }
 }

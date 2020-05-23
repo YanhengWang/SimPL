@@ -12,11 +12,12 @@ import simpl.typing.TypeError;
 public class Interpreter {
 
 	public void run(String filename) {
+		DefaultTypeEnv initialTypeEnv = new DefaultTypeEnv();
 		try (InputStream inp = new FileInputStream(filename)) {
 			Parser parser = new Parser(inp);
 			java_cup.runtime.Symbol parseTree = parser.parse();
 			Expr program = (Expr) parseTree.value;
-			System.out.println(program.typecheck(new DefaultTypeEnv()).t);
+			System.out.println(program.typecheck(initialTypeEnv).t);
 			System.out.println(program.eval(new InitialState()));
 		}
 		catch (TypeError e) {
@@ -39,6 +40,7 @@ public class Interpreter {
 	}
 
 	public static void main(String[] args) {
+		interpret("examples/stream.spl");
 		interpret("examples/gc.spl");
 		interpret("examples/mutualRec.spl");
 		interpret("examples/polymorphism.spl");
@@ -57,6 +59,5 @@ public class Interpreter {
 		interpret("examples/pcf.factorial.spl");
 		interpret("examples/pcf.fibonacci.spl");
 		interpret("examples/pcf.twice.spl");
-		interpret("examples/pcf.lists.spl");
 	}
 }

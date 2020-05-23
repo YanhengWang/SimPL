@@ -21,6 +21,8 @@ public class DefaultTypeEnv extends TypeEnv {
             E = TypeEnv.of(E, Symbol.symbol("succ"), Succ.succ.e.typecheck(TypeEnv.empty).t);
             E = TypeEnv.of(E, Symbol.symbol("iszero"), IsZero.iszero.e.typecheck(TypeEnv.empty).t);
             E = TypeEnv.of(E, Symbol.symbol("gc"), UnitType.UNIT);
+            E = TypeEnv.of(E, Symbol.symbol("print"), Print.print.e.typecheck(TypeEnv.empty).t);
+            E = TypeEnv.of(E, Symbol.symbol("toStream"), ToStream.toStream.e.typecheck(TypeEnv.empty).t);
         }catch(TypeError e){
             System.out.println("Impossible");
         }

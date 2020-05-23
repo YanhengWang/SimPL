@@ -19,20 +19,20 @@ public class ParserTest {
 	}
 
 	public static void main(String[] argv) {
-		parse("doc/examples/plus.spl");
-		parse("doc/examples/factorial.spl");
-		parse("doc/examples/gcd1.spl");
-		parse("doc/examples/gcd2.spl");
-		parse("doc/examples/max.spl");
-		parse("doc/examples/sum.spl");
-		parse("doc/examples/mutualRec.spl");
-		parse("doc/examples/pcf.sum.spl");
-		parse("doc/examples/pcf.even.spl");
-		parse("doc/examples/pcf.twice.spl");
-		parse("doc/examples/pcf.minus.spl");
-		parse("doc/examples/pcf.factorial.spl");
-		parse("doc/examples/pcf.fibonacci.spl");
-		parse("doc/examples/pcf.lists.spl");
-		parse("doc/examples/append.spl");
+		parse("examples/stream.spl");
+		/*parse("examples/plus.spl");
+		parse("examples/factorial.spl");
+		parse("examples/gcd1.spl");
+		parse("examples/gcd2.spl");
+		parse("examples/max.spl");
+		parse("examples/sum.spl");
+		parse("examples/mutualRec.spl");
+		parse("examples/pcf.sum.spl");
+		parse("examples/pcf.even.spl");
+		parse("examples/pcf.twice.spl");
+		parse("examples/pcf.minus.spl");
+		parse("examples/pcf.factorial.spl");
+		parse("examples/pcf.fibonacci.spl");
+		parse("examples/append.spl");*/
 	}
 }

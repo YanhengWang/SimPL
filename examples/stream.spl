@@ -1,0 +1,9 @@
+let s1 = stream 1 => (fn x => x+1) [10] in
+let s2 = s1 >> (fn x => x*x) in
+let s3 = toStream (1::10::32::12::48::nil) in
+	print (s1 >> end);
+	print (s2 >> end);
+	print (s3 >> (fn x => x/2) >> end)
+end
+end
+end

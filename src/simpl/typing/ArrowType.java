@@ -40,6 +40,6 @@ public final class ArrowType extends Type {
 	}
 
 	public String toString() {
-		return "(" + t1 + " -> " + t2 + ")";
+		return "(" + t1 + "➤" + t2 + ")";
 	}
 }

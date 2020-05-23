@@ -45,6 +45,7 @@ Whitespace = {LineTerm}|[ \t\f]
     
     "nil"     { return token(NIL); }
     "ref"     { return token(REF); }
+    "stream"  { return token(STREAM); }
     "fn"      { return token(FN); }
     "rec"     { return token(REC); }
     "let"     { return token(LET); }
@@ -76,6 +77,7 @@ Whitespace = {LineTerm}|[ \t\f]
     ">=" { return token(GE); }
     
     "::" { return token(CONS); }
+    ">>" { return token(PASS); }
     "()" { return token(UNIT); }
     "=>" { return token(ARROW); }
     
@@ -86,6 +88,8 @@ Whitespace = {LineTerm}|[ \t\f]
     ";"  { return token(SEMI); }
     "("  { return token(LPAREN); }
     ")"  { return token(RPAREN); }
+    "["  { return token(LSQUARE); }
+    "]"  { return token(RSQUARE); }
     
     {Identifier} { return token(ID, yytext()); }
     {DecInteger} { return token(NUM, Integer.valueOf(yytext())); }
