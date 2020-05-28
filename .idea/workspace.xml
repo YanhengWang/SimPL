@@ -5,38 +5,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Remove redundant files">
-      <change afterPath="$PROJECT_DIR$/examples/stream.spl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/StreamPipeline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/StreamValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Print.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/ToStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Dispatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Pass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Stream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Trunc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/typing/StreamType.java" afterDir="false" />
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Equip with stream operations, list-to-stream conversion, and printing facility">
+      <change afterPath="$PROJECT_DIR$/examples/tailRec.spl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/LazyAppValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Env.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Env.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/CUP$Parser$actions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/Lexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/Symbols.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/Symbols.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/simpl.grm" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/simpl.grm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/simpl.lex" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/simpl.lex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/ArrowType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/ArrowType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/pcf.lists.spl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/BinaryExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/BinaryExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Cond.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Cond.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Expr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Group.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Let.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Let.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Name.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Rec.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Rec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/pcf.fibonacci.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/pcf.fibonacci.spl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Env.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Env.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/Lexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/Symbols.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/Symbols.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/simpl.grm" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/simpl.grm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/simpl.lex" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/simpl.lex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/DefaultTypeEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/DefaultTypeEnv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/BinaryExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/BinaryExpr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Cond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Cond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Expr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Rec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Rec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,17 +74,17 @@
     <option name="SHOW_DETAILS_PANEL" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/doc/examples" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="simpl.interpreter.lib" />
-      <recent name="simpl.parser.ast" />
-      <recent name="simpl.interpreter" />
-      <recent name="simpl.typing" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/examples/" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="simpl.interpreter" />
+      <recent name="simpl.interpreter.lib" />
+      <recent name="simpl.parser.ast" />
+      <recent name="simpl.typing" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/examples" />
     </key>
   </component>
   <component name="RunManager" selected="Application.app">
@@ -228,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590049443270</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Equip with stream operations, list-to-stream conversion, and printing facility">
+      <created>1590203708507</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590203708508</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,7 +307,8 @@
     <MESSAGE value="Refine let-polymorphism" />
     <MESSAGE value="Support garbage collection" />
     <MESSAGE value="Remove redundant files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove redundant files" />
+    <MESSAGE value="Equip with stream operations, list-to-stream conversion, and printing facility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Equip with stream operations, list-to-stream conversion, and printing facility" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Java" timestamp="1587358910189">
@@ -316,10 +319,10 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="519" y="246" key="#Other_File_Types/0.0.1366.696@0.0.1366.696" timestamp="1587364411090" />
-    <state x="368" y="92" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588068428132">
+    <state x="368" y="92" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590464014737">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
-    <state x="368" y="92" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.696@0.0.1366.696" timestamp="1588068428132" />
+    <state x="368" y="92" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.696@0.0.1366.696" timestamp="1590464014737" />
     <state x="368" y="112" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1366.673@0.23.1366.673" timestamp="1587458485948" />
     <state x="134" y="0" width="1071" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587359300273">
       <screen x="0" y="0" width="1366" height="696" />
@@ -343,72 +346,72 @@
     </state>
     <state x="447" y="285" width="472" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.696@0.0.1366.696" timestamp="1587374393657" />
     <state x="447" y="299" width="472" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1366.673@0.23.1366.673" timestamp="1590029516943" />
-    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590038422439">
+    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590635108796">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.673@0.23.1366.673" timestamp="1590038422439" />
-    <state width="1345" height="171" key="GridCell.Tab.0.bottom" timestamp="1590203516444">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.673@0.23.1366.673" timestamp="1590635108796" />
+    <state width="1142" height="173" key="GridCell.Tab.0.bottom" timestamp="1590642980576">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1590203516444" />
-    <state width="1081" height="135" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590163246019" />
+    <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1590203733894" />
+    <state width="1142" height="173" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590642980576" />
     <state width="1081" height="111" key="GridCell.Tab.0.bottom/0.23.1366.674@0.23.1366.674" timestamp="1590070692558" />
-    <state width="1345" height="171" key="GridCell.Tab.0.center" timestamp="1590203516443">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state width="1142" height="173" key="GridCell.Tab.0.center" timestamp="1590642980576">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1590203516443" />
-    <state width="1081" height="135" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1590163246018" />
+    <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1590203733891" />
+    <state width="1142" height="173" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1590642980576" />
     <state width="1081" height="111" key="GridCell.Tab.0.center/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
-    <state width="1345" height="171" key="GridCell.Tab.0.left" timestamp="1590203516442">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state width="1142" height="173" key="GridCell.Tab.0.left" timestamp="1590642980575">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1590203516442" />
-    <state width="1081" height="135" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1590163246017" />
+    <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1590203733890" />
+    <state width="1142" height="173" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1590642980575" />
     <state width="1081" height="111" key="GridCell.Tab.0.left/0.23.1366.674@0.23.1366.674" timestamp="1590070692556" />
-    <state width="1345" height="171" key="GridCell.Tab.0.right" timestamp="1590203516443">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state width="1142" height="173" key="GridCell.Tab.0.right" timestamp="1590642980576">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1590203516443" />
-    <state width="1081" height="135" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1590163246018" />
+    <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1590203733893" />
+    <state width="1142" height="173" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1590642980576" />
     <state width="1081" height="111" key="GridCell.Tab.0.right/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
-    <state width="1345" height="221" key="GridCell.Tab.1.bottom" timestamp="1590160897274">
+    <state width="1142" height="173" key="GridCell.Tab.1.bottom" timestamp="1590642980578">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.bottom/0.0.1366.696@0.0.1366.696" timestamp="1590152827491" />
-    <state width="1345" height="221" key="GridCell.Tab.1.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590160897274" />
-    <state width="1345" height="221" key="GridCell.Tab.1.center" timestamp="1590160897273">
+    <state width="1142" height="173" key="GridCell.Tab.1.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590642980578" />
+    <state width="1142" height="173" key="GridCell.Tab.1.center" timestamp="1590642980577">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.center/0.0.1366.696@0.0.1366.696" timestamp="1590152827489" />
-    <state width="1345" height="221" key="GridCell.Tab.1.center/0.23.1366.673@0.23.1366.673" timestamp="1590160897273" />
-    <state width="1345" height="221" key="GridCell.Tab.1.left" timestamp="1590160897273">
+    <state width="1142" height="173" key="GridCell.Tab.1.center/0.23.1366.673@0.23.1366.673" timestamp="1590642980577" />
+    <state width="1142" height="173" key="GridCell.Tab.1.left" timestamp="1590642980577">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.left/0.0.1366.696@0.0.1366.696" timestamp="1590152827489" />
-    <state width="1345" height="221" key="GridCell.Tab.1.left/0.23.1366.673@0.23.1366.673" timestamp="1590160897273" />
-    <state width="1345" height="221" key="GridCell.Tab.1.right" timestamp="1590160897273">
+    <state width="1142" height="173" key="GridCell.Tab.1.left/0.23.1366.673@0.23.1366.673" timestamp="1590642980577" />
+    <state width="1142" height="173" key="GridCell.Tab.1.right" timestamp="1590642980577">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.right/0.0.1366.696@0.0.1366.696" timestamp="1590152827490" />
-    <state width="1345" height="221" key="GridCell.Tab.1.right/0.23.1366.673@0.23.1366.673" timestamp="1590160897273" />
+    <state width="1142" height="173" key="GridCell.Tab.1.right/0.23.1366.673@0.23.1366.673" timestamp="1590642980577" />
     <state x="283" y="0" key="SettingsEditor" timestamp="1587359105934">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1590049447249">
-      <screen x="0" y="23" width="1366" height="673" />
+    <state x="283" y="124" key="Vcs.Push.Dialog.v2" timestamp="1590203710856">
+      <screen x="0" y="0" width="1366" height="696" />
     </state>
-    <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1588664161627" />
+    <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1590203710856" />
     <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1590049447249" />
-    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590038918529">
+    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590465329997">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1366.673@0.23.1366.673" timestamp="1590038918529" />
-    <state x="100" y="120" width="1166" height="550" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590028900088">
+    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1366.673@0.23.1366.673" timestamp="1590465329997" />
+    <state x="100" y="120" width="1166" height="550" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590465914570">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="100" y="100" width="1166" height="568" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.696@0.0.1366.696" timestamp="1588662708731" />
-    <state x="100" y="120" width="1166" height="550" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1366.673@0.23.1366.673" timestamp="1590028900088" />
+    <state x="100" y="120" width="1166" height="550" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1366.673@0.23.1366.673" timestamp="1590465914570" />
     <state x="475" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588080994195">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
@@ -421,6 +424,20 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="348" y="20" width="670" height="676" key="search.everywhere.popup/0.0.1366.696@0.0.1366.696" timestamp="1588661972681" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/simpl/parser/ast/App.java</url>
+          <line>40</line>
+          <properties class="simpl.parser.ast.App" method="eval">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimPL$app.ic" NAME="app Coverage Results" MODIFIED="1588518366212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

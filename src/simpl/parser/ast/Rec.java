@@ -16,6 +16,7 @@ public class Rec extends Expr {
     public Rec(Symbol x, Expr e) {
         this.x = x;
         this.e = e;
+        markTails(x);
     }
 
     public String toString() {
@@ -35,6 +36,17 @@ public class Rec extends Expr {
     @Override
     public Value eval(State s) throws RuntimeError {
         RecValue recValue = new RecValue(s.E, x, e);  //snapshot
-        return e.eval(State.of(new Env(s.E, x, recValue), s.M, s.p));  //go inside the body
+        return e.eval(State.of(new Env(s.E, x, recValue), s.M, s.p));
+    }
+
+    @Override
+    public void markTails(Symbol symbol){
+        if(!(e instanceof Fn) || symbol!=x)
+            return;
+
+        Fn f;
+        for(f=(Fn)e; f.e instanceof Fn; f=(Fn)f.e)
+            ;    //goto the final function in this chain of functions
+        f.e.markTails(symbol);    //x shadows symbol (we don't support nested recursion)
     }
 }

@@ -1,14 +1,9 @@
 package simpl.parser.ast;
 
-import simpl.interpreter.Env;
-import simpl.interpreter.FunValue;
-import simpl.interpreter.RuntimeError;
-import simpl.interpreter.State;
-import simpl.interpreter.Value;
+import simpl.interpreter.*;
 import simpl.parser.Symbol;
 import simpl.typing.ArrowType;
 import simpl.typing.Substitution;
-import simpl.typing.Type;
 import simpl.typing.TypeEnv;
 import simpl.typing.TypeError;
 import simpl.typing.TypeResult;
@@ -44,10 +39,37 @@ public class App extends BinaryExpr {
 
     @Override
     public Value eval(State s) throws RuntimeError {
-        FunValue f = (FunValue) l.eval(s);
-        Value v = r.eval(s);
-        return f.e.eval(
-            State.of(new Env(f.E, f.x, v), s.M, s.p)
-        );  //call the function body under f's environment, with f.x maps to v
+        Value valueL = l.eval(s);
+        Value valueR = r.eval(s);
+
+        if(valueL instanceof LazyAppValue){
+            // It's at tail, don't call it at this level, but just add the binding virtually
+            LazyAppValue lazy = (LazyAppValue)valueL;
+            Fn f = (Fn) lazy.e;
+            return new LazyAppValue(
+                new Env(lazy.binding, f.x, valueR), f.e
+            );
+        }
+
+        FunValue f = (FunValue) valueL;
+        Value ret = f.e.eval(
+            State.of(new Env(f.E, f.x, valueR), s.M, s.p)
+        );  //call the function body under f's environment, with f.x mapping to v
+
+        while(ret instanceof LazyAppValue){
+            // This is the right place to execute the lazy application
+            LazyAppValue lazy = (LazyAppValue)ret;
+            Env E = f.E;
+            for(Env env=lazy.binding; env!=Env.empty; env=env.E)
+                E = new Env(E, env.x, env.v);    //put the bindings onto E
+            ret = lazy.e.eval(State.of(E, s.M, s.p));
+        }
+
+        return ret;
+    }
+
+    @Override
+    public void markTails(Symbol symbol){
+        l.markTails(symbol);
     }
 }

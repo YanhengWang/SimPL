@@ -40,10 +40,6 @@ public class Interpreter {
 	}
 
 	public static void main(String[] args) {
-		interpret("examples/stream.spl");
-		interpret("examples/gc.spl");
-		interpret("examples/mutualRec.spl");
-		interpret("examples/polymorphism.spl");
 		interpret("examples/list.spl");
 		interpret("examples/reference.spl");
 		interpret("examples/plus.spl");
@@ -59,5 +55,10 @@ public class Interpreter {
 		interpret("examples/pcf.factorial.spl");
 		interpret("examples/pcf.fibonacci.spl");
 		interpret("examples/pcf.twice.spl");
+		interpret("examples/polymorphism.spl");
+		interpret("examples/mutualRec.spl");
+		interpret("examples/tailRec.spl");
+		interpret("examples/gc.spl");
+		interpret("examples/stream.spl");
 	}
 }

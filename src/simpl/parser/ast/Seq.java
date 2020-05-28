@@ -3,6 +3,7 @@ package simpl.parser.ast;
 import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
+import simpl.parser.Symbol;
 import simpl.typing.Type;
 import simpl.typing.TypeEnv;
 import simpl.typing.TypeError;
@@ -32,5 +33,10 @@ public class Seq extends BinaryExpr {
     public Value eval(State s) throws RuntimeError {
         l.eval(s);
         return r.eval(s);
+    }
+
+    @Override
+    public void markTails(Symbol symbol){
+        r.markTails(symbol);
     }
 }

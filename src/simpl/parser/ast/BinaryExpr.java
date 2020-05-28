@@ -1,5 +1,7 @@
 package simpl.parser.ast;
 
+import simpl.parser.Symbol;
+
 public abstract class BinaryExpr extends Expr {
 
     public Expr l, r;

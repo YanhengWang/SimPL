@@ -7,9 +7,11 @@ import simpl.typing.*;
 public class Name extends Expr {
 
     public Symbol x;
+    public boolean isRecTail;
 
     public Name(Symbol x) {
         this.x = x;
+        this.isRecTail = false;
     }
 
     public String toString() {
@@ -31,11 +33,19 @@ public class Name extends Expr {
         Value v = s.E.get(x);
         if(v instanceof RecValue) {
             RecValue recValue = (RecValue) v;
-            Rec rec = new Rec(recValue.x, recValue.e);
-            return rec.eval(State.of(recValue.E, s.M, s.p));    //run it recursively
+            if(isRecTail)
+                return new LazyAppValue(Env.empty, recValue.e);
+            Rec rec = new Rec(recValue.x, recValue.e);    //"copy"
+            return rec.eval(State.of(recValue.E, s.M, s.p));
         }else if(v instanceof UnitValue){
             ((UnitValue) v).takeAction(s);
         }
         return v;
+    }
+
+    @Override
+    public void markTails(Symbol symbol){
+        if(x == symbol)
+            isRecTail = true;
     }
 }

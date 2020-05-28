@@ -4,6 +4,7 @@ import simpl.interpreter.BoolValue;
 import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
+import simpl.parser.Symbol;
 import simpl.typing.Substitution;
 import simpl.typing.Type;
 import simpl.typing.TypeEnv;
@@ -52,5 +53,11 @@ public class Cond extends Expr {
         }else{
             return e3.eval(s);
         }
+    }
+
+    @Override
+    public void markTails(Symbol symbol){
+        e2.markTails(symbol);
+        e3.markTails(symbol);
     }
 }

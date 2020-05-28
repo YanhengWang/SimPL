@@ -51,4 +51,9 @@ public class Let extends Expr {
         State.rootList.pop();    //pop v1
         return v2;
     }
+
+    @Override
+    public void markTails(Symbol symbol){
+        e2.markTails(symbol);    //mark e2 only because it returns directly after eval
+    }
 }

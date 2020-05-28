@@ -1,0 +1,12 @@
+let plus = rec p =>
+	fn x => fn y =>
+		if iszero x then y else p (pred x) (succ y)
+in
+let fibonacci = rec fib =>
+	fn n => fn r0 => fn r1 =>
+		if iszero n then r0
+		else fib (pred n) (plus r0 r1) r0
+in
+	fibonacci 30 0 1
+end
+end

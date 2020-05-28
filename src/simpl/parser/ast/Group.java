@@ -3,6 +3,7 @@ package simpl.parser.ast;
 import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
+import simpl.parser.Symbol;
 import simpl.typing.TypeEnv;
 import simpl.typing.TypeError;
 import simpl.typing.TypeResult;
@@ -25,5 +26,10 @@ public class Group extends UnaryExpr {
     @Override
     public Value eval(State s) throws RuntimeError {
         return e.eval(s);
+    }
+
+    @Override
+    public void markTails(Symbol symbol){
+        e.markTails(symbol);
     }
 }
