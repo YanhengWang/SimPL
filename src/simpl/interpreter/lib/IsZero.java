@@ -6,10 +6,10 @@ import simpl.parser.ast.Expr;
 import simpl.parser.ast.Fn;
 import simpl.typing.*;
 
-public class ToStream extends Fn {
-    public static final ToStream toStream = new ToStream();
+public class IsZero extends Fn {
+    public static final IsZero iszero = new IsZero();
 
-    private ToStream(){
+    private IsZero(){
         super(Symbol.symbol("x"), null);
         e = new Expr() {
             @Override
@@ -17,16 +17,15 @@ public class ToStream extends Fn {
 
             @Override
             public Value eval(State s) {
-                Value list = s.E.get(x);
-                return new StreamValue(list);
+                IntValue v = (IntValue) s.E.get(x);
+                return v.n==0 ? BoolValue.TRUE : BoolValue.FALSE;
             }
         };
     };
 
     @Override
     public TypeResult typecheck(TypeEnv E) {
-        TypeVar X = new TypeVar(true);
-        ArrowType t = new ArrowType(new ListType(X), new StreamType(X));
-        return TypeResult.of(new PolyType(t, E));
+        ArrowType t = new ArrowType(Type.INT, Type.BOOL);
+        return TypeResult.of(t);
     }
 }

@@ -42,7 +42,8 @@ public class OrElse extends BinaryExpr {
     @Override
     public Value eval(State s) throws RuntimeError {
         BoolValue v1 = (BoolValue) l.eval(s);
-        BoolValue v2 = (BoolValue) r.eval(s);
-        return (v1.b || v2.b) ? BoolValue.TRUE : BoolValue.FALSE;
+        if(v1.b)
+            return BoolValue.TRUE;    //short circuit
+        return r.eval(s);
     }
 }

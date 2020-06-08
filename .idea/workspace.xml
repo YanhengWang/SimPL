@@ -5,33 +5,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Equip with stream operations, list-to-stream conversion, and printing facility">
-      <change afterPath="$PROJECT_DIR$/examples/tailRec.spl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/LazyAppValue.java" afterDir="false" />
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Tail recursion optimization">
+      <change afterPath="$PROJECT_DIR$/examples/test.spl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/IsZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Max.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Min.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Pred.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Succ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Sum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Env.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Env.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/BinaryExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/BinaryExpr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Cond.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Cond.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Expr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Let.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Let.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Name.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Rec.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Rec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/pcf.fibonacci.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/pcf.fibonacci.spl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Env.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Env.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/BinaryExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/BinaryExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Cond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Cond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Expr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Let.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Rec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Rec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/fst.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/fst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/hd.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/hd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/snd.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/snd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/lib/tl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/lib/tl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/iszero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/pred.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/pcf/succ.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/DefaultTypeEnv.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/DefaultTypeEnv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/stream.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/stream.spl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/Fst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Fst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/Hd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Hd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/Snd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Snd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/Tl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/Tl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/lib/ToStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/lib/ToStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/pcf/IsZero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/pcf/Pred.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/pcf/Succ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/AndAlso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/AndAlso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/OrElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/OrElse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/DefaultTypeEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/DefaultTypeEnv.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,17 +79,17 @@
     <option name="SHOW_DETAILS_PANEL" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/examples/" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/examples" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="simpl.interpreter" />
       <recent name="simpl.interpreter.lib" />
+      <recent name="simpl.interpreter" />
       <recent name="simpl.parser.ast" />
       <recent name="simpl.typing" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/doc/examples" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples/" />
     </key>
   </component>
   <component name="RunManager" selected="Application.app">
@@ -230,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590203708508</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Tail recursion optimization">
+      <created>1590643264742</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1590643264743</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,7 +320,8 @@
     <MESSAGE value="Support garbage collection" />
     <MESSAGE value="Remove redundant files" />
     <MESSAGE value="Equip with stream operations, list-to-stream conversion, and printing facility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Equip with stream operations, list-to-stream conversion, and printing facility" />
+    <MESSAGE value="Tail recursion optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tail recursion optimization" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Java" timestamp="1587358910189">
@@ -346,63 +359,63 @@
     </state>
     <state x="447" y="285" width="472" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.696@0.0.1366.696" timestamp="1587374393657" />
     <state x="447" y="299" width="472" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1366.673@0.23.1366.673" timestamp="1590029516943" />
-    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590635108796">
+    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591584845434">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.673@0.23.1366.673" timestamp="1590635108796" />
-    <state width="1142" height="173" key="GridCell.Tab.0.bottom" timestamp="1590642980576">
+    <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.673@0.23.1366.673" timestamp="1591584845434" />
+    <state width="1142" height="132" key="GridCell.Tab.0.bottom" timestamp="1591587835054">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1590203733894" />
-    <state width="1142" height="173" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590642980576" />
+    <state width="1142" height="132" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1591587835054" />
     <state width="1081" height="111" key="GridCell.Tab.0.bottom/0.23.1366.674@0.23.1366.674" timestamp="1590070692558" />
-    <state width="1142" height="173" key="GridCell.Tab.0.center" timestamp="1590642980576">
+    <state width="1142" height="132" key="GridCell.Tab.0.center" timestamp="1591587835053">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1590203733891" />
-    <state width="1142" height="173" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1590642980576" />
+    <state width="1142" height="132" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1591587835053" />
     <state width="1081" height="111" key="GridCell.Tab.0.center/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
-    <state width="1142" height="173" key="GridCell.Tab.0.left" timestamp="1590642980575">
+    <state width="1142" height="132" key="GridCell.Tab.0.left" timestamp="1591587835053">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1590203733890" />
-    <state width="1142" height="173" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1590642980575" />
+    <state width="1142" height="132" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1591587835053" />
     <state width="1081" height="111" key="GridCell.Tab.0.left/0.23.1366.674@0.23.1366.674" timestamp="1590070692556" />
-    <state width="1142" height="173" key="GridCell.Tab.0.right" timestamp="1590642980576">
+    <state width="1142" height="132" key="GridCell.Tab.0.right" timestamp="1591587835053">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1590203733893" />
-    <state width="1142" height="173" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1590642980576" />
+    <state width="1142" height="132" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1591587835053" />
     <state width="1081" height="111" key="GridCell.Tab.0.right/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
-    <state width="1142" height="173" key="GridCell.Tab.1.bottom" timestamp="1590642980578">
+    <state width="1142" height="173" key="GridCell.Tab.1.bottom" timestamp="1591584208356">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.bottom/0.0.1366.696@0.0.1366.696" timestamp="1590152827491" />
-    <state width="1142" height="173" key="GridCell.Tab.1.bottom/0.23.1366.673@0.23.1366.673" timestamp="1590642980578" />
-    <state width="1142" height="173" key="GridCell.Tab.1.center" timestamp="1590642980577">
+    <state width="1142" height="173" key="GridCell.Tab.1.bottom/0.23.1366.673@0.23.1366.673" timestamp="1591584208356" />
+    <state width="1142" height="173" key="GridCell.Tab.1.center" timestamp="1591584208356">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.center/0.0.1366.696@0.0.1366.696" timestamp="1590152827489" />
-    <state width="1142" height="173" key="GridCell.Tab.1.center/0.23.1366.673@0.23.1366.673" timestamp="1590642980577" />
-    <state width="1142" height="173" key="GridCell.Tab.1.left" timestamp="1590642980577">
+    <state width="1142" height="173" key="GridCell.Tab.1.center/0.23.1366.673@0.23.1366.673" timestamp="1591584208356" />
+    <state width="1142" height="173" key="GridCell.Tab.1.left" timestamp="1591584208355">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.left/0.0.1366.696@0.0.1366.696" timestamp="1590152827489" />
-    <state width="1142" height="173" key="GridCell.Tab.1.left/0.23.1366.673@0.23.1366.673" timestamp="1590642980577" />
-    <state width="1142" height="173" key="GridCell.Tab.1.right" timestamp="1590642980577">
+    <state width="1142" height="173" key="GridCell.Tab.1.left/0.23.1366.673@0.23.1366.673" timestamp="1591584208355" />
+    <state width="1142" height="173" key="GridCell.Tab.1.right" timestamp="1591584208356">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="221" key="GridCell.Tab.1.right/0.0.1366.696@0.0.1366.696" timestamp="1590152827490" />
-    <state width="1142" height="173" key="GridCell.Tab.1.right/0.23.1366.673@0.23.1366.673" timestamp="1590642980577" />
+    <state width="1142" height="173" key="GridCell.Tab.1.right/0.23.1366.673@0.23.1366.673" timestamp="1591584208356" />
     <state x="283" y="0" key="SettingsEditor" timestamp="1587359105934">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
-    <state x="283" y="124" key="Vcs.Push.Dialog.v2" timestamp="1590203710856">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1590643272066">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1590203710856" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1590049447249" />
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1590643272066" />
     <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590465329997">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
@@ -416,6 +429,10 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="475" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.696@0.0.1366.696" timestamp="1588080994195" />
+    <state x="345" y="23" width="598" height="673" key="find.popup" timestamp="1591588135803">
+      <screen x="0" y="23" width="1366" height="673" />
+    </state>
+    <state x="345" y="23" width="598" height="673" key="find.popup/0.23.1366.673@0.23.1366.673" timestamp="1591588135803" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1587361985846">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
