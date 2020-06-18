@@ -22,9 +22,9 @@ public class Loop extends Expr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        //New constraints: {tl=Bool}
+        //New constraints: {tl=Bool, tr=Unit}
         TypeResult resultL, resultR;
-        Substitution s1, s2, s3;
+        Substitution s1, s2, s3, s4, s5;
 
         resultL = e1.typecheck(E);
         s1 = resultL.s;
@@ -32,8 +32,10 @@ public class Loop extends Expr {
         s3 = s2.compose(s1);    //s2(s1(.))
 
         resultR = e2.typecheck(TypeEnv.embody(E,s3));
+        s4 = resultR.s;
+        s5 = resultR.t.unify(Type.UNIT);
         return TypeResult.of(
-                resultR.s.compose(s3), Type.UNIT
+                s5.compose(s4.compose(s3)), Type.UNIT
         );
     }
 

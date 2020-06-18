@@ -22,7 +22,7 @@ public class OrElse extends BinaryExpr {
 
     @Override
     public TypeResult typecheck(TypeEnv E) throws TypeError {
-        //New constraints: {t1=BOOL, t2=BOOL}
+        //New constraints: {tl=BOOL, tr=BOOL}
         TypeResult resultL, resultR;
         Substitution s1, s2, s3, s4, s5;
 

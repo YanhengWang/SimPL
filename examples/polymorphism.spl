@@ -1,17 +1,8 @@
-(*
-fn x => fn y => fn z =>
-	x::y::z::y-1::z::nil
-*)
-(*
-rec m => fn x => fn y =>
-	if iszero y then x
-	else m (pred x) (pred y)
-*)
 let double =
 	fn f => fn x => f (f x)
 in
 let neg = (fn b => not b) in
-	(double succ 10);
-	(double neg true)
+	print (double succ 10);
+	print (double neg true)
 end
 end
