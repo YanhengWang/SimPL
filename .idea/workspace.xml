@@ -10,22 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Reconstruct library functions">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SimPL_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/InitialState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Loop.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Loop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/parser/ast/Seq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/gc.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/gc.spl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/polymorphism.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/polymorphism.spl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/InitialState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/OrElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/OrElse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/parser/ast/Seq.java" afterDir="false" />
-    </list>
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Modify typing rules; Update README and documentation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591588496128</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Modify typing rules; Update README and documentation">
+      <created>1592484790139</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1592484790139</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +312,8 @@
     <MESSAGE value="Equip with stream operations, list-to-stream conversion, and printing facility" />
     <MESSAGE value="Tail recursion optimization" />
     <MESSAGE value="Reconstruct library functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reconstruct library functions" />
+    <MESSAGE value="Modify typing rules; Update README and documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify typing rules; Update README and documentation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Java" timestamp="1587358910189">
@@ -415,11 +408,11 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1591588500373">
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1592484793671">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1590203710856" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1591588500373" />
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1592484793671" />
     <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590465329997">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
