@@ -6,40 +6,33 @@
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Update README">
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Update error messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimPL.jar" beforeDir="false" afterPath="$PROJECT_DIR$/SimPL.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/ArrowType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/ArrowType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/BoolType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/BoolType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/IntType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/IntType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/ListType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/ListType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/PairType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/PairType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/RefType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/RefType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/TypeCircularityError.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/TypeCircularityError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/TypeMismatchError.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/TypeMismatchError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/TypeVar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/TypeVar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/UnitType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/UnitType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/append.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/append.spl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/PairValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/PairValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/BoolType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/IntType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/ListType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/ListType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/PairType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/PairType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/PolyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/PolyType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/RefType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/RefType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/StreamType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/StreamType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/TypeCircularityError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/TypeCircularityError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/TypeMismatchError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/TypeMismatchError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/TypeVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/TypeVar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simpl/typing/UnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/UnitType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,7 @@
       <recent name="$PROJECT_DIR$/examples/" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.app">
+  <component name="RunManager" selected="JAR Application.SimPL.jar">
     <configuration name="app" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="simpl.interpreter.Interpreter" />
       <module name="SimPL" />
@@ -114,10 +107,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimPL.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/SimPL.jar" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.app" />
       <item itemvalue="Application.parser" />
+      <item itemvalue="JAR Application.SimPL.jar" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.SimPL.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -270,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592485898120</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update error messages">
+      <created>1593675600551</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1593675600551</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,7 +338,19 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -351,7 +373,8 @@
     <MESSAGE value="Reconstruct library functions" />
     <MESSAGE value="Modify typing rules; Update README and documentation" />
     <MESSAGE value="Update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README" />
+    <MESSAGE value="Update error messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update error messages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Java" timestamp="1587358910189">
@@ -398,29 +421,29 @@
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.673@0.23.1366.673" timestamp="1591584845434" />
-    <state width="1142" height="132" key="GridCell.Tab.0.bottom" timestamp="1593675414424">
+    <state width="1142" height="132" key="GridCell.Tab.0.bottom" timestamp="1593675658023">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1590203733894" />
-    <state width="1142" height="132" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1593675414424" />
+    <state width="1142" height="132" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1593675658023" />
     <state width="1081" height="111" key="GridCell.Tab.0.bottom/0.23.1366.674@0.23.1366.674" timestamp="1590070692558" />
-    <state width="1142" height="132" key="GridCell.Tab.0.center" timestamp="1593675414422">
+    <state width="1142" height="132" key="GridCell.Tab.0.center" timestamp="1593675658022">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1590203733891" />
-    <state width="1142" height="132" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1593675414422" />
+    <state width="1142" height="132" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1593675658022" />
     <state width="1081" height="111" key="GridCell.Tab.0.center/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
-    <state width="1142" height="132" key="GridCell.Tab.0.left" timestamp="1593675414421">
+    <state width="1142" height="132" key="GridCell.Tab.0.left" timestamp="1593675658021">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1590203733890" />
-    <state width="1142" height="132" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1593675414421" />
+    <state width="1142" height="132" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1593675658021" />
     <state width="1081" height="111" key="GridCell.Tab.0.left/0.23.1366.674@0.23.1366.674" timestamp="1590070692556" />
-    <state width="1142" height="132" key="GridCell.Tab.0.right" timestamp="1593675414423">
+    <state width="1142" height="132" key="GridCell.Tab.0.right" timestamp="1593675658023">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1590203733893" />
-    <state width="1142" height="132" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1593675414423" />
+    <state width="1142" height="132" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1593675658023" />
     <state width="1081" height="111" key="GridCell.Tab.0.right/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
     <state width="1142" height="173" key="GridCell.Tab.1.bottom" timestamp="1591588517354">
       <screen x="0" y="23" width="1366" height="673" />
@@ -446,11 +469,11 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1592485900672">
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1593675604355">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1590203710856" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1592485900672" />
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1593675604355" />
     <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593674740204">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
@@ -495,5 +518,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimPL$app.ic" NAME="app Coverage Results" MODIFIED="1588518366212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SimPL$SimPL_jar.ic" NAME="SimPL.jar Coverage Results" MODIFIED="1593675827012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
