@@ -16,7 +16,7 @@ final class BoolType extends Type {
             return t.unify(this);
         if(t instanceof BoolType)
             return Substitution.IDENTITY;
-        throw new TypeMismatchError();
+        throw new TypeMismatchError(this, t);
     }
 
     @Override

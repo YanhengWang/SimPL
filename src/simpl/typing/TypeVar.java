@@ -20,11 +20,11 @@ public class TypeVar extends Type {
     }
 
     @Override
-    public Substitution unify(Type t) throws TypeCircularityError {
+    public Substitution unify(Type t) throws TypeError {
         if(this == t)
             return Substitution.IDENTITY;
         if(t.contains(this))
-            throw new TypeCircularityError();
+            throw new TypeCircularityError(this, t);
         return new Substitution.Replace(this, t);
     }
 

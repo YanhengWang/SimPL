@@ -21,7 +21,7 @@ public final class ListType extends Type {
             ListType lt = (ListType) t;
             return this.t.unify(lt.t);
         }
-        throw new TypeMismatchError();
+        throw new TypeMismatchError(this, t);
     }
 
     @Override

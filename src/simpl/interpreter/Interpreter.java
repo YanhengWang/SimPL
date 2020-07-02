@@ -1,6 +1,7 @@
 package simpl.interpreter;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 import simpl.parser.Parser;
@@ -19,27 +20,16 @@ public class Interpreter {
 			java_cup.runtime.Symbol parseTree = parser.parse();
 			Expr program = (Expr) parseTree.value;
 
-			program.typecheck(initialTypeEnv);
-			Value value = program.eval(state);
-			if(value instanceof RefValue){
-				System.out.println("ref@" + state.M.get(((RefValue) value).p));
-			}else if(value instanceof ConsValue){
-				int length = 0;
-				for(Value v=value; v instanceof ConsValue; v=((ConsValue)v).v2)
-					length++;
-				System.out.println("list@" + length);
-			}else{
-				System.out.println(value);
-			}
-		//	System.out.println(program.typecheck(initialTypeEnv).t);
-		//	System.out.println(program.eval(state));
+			System.out.println("Type: " + program.typecheck(initialTypeEnv).t);
+			System.out.println("Value = " + program.eval(state));
 		} catch (TypeError e) {
-			System.out.println("type error");
-		//	System.out.println(e.getMessage());
+			System.out.println("Type error [" + e.getMessage() + "].");
 		} catch (RuntimeError e) {
-			System.out.println("runtime error");
+			System.out.println("Runtime error [" + e.getMessage() +"].");
+		} catch (IOException e) {
+			System.out.println("Source file not found.");
 		} catch (Exception e){
-			System.out.println("syntax error");
+			System.out.println("Syntax error.");
 		}
 	}
 
@@ -53,25 +43,5 @@ public class Interpreter {
 			interpret(args[0]);
 		else
 			System.out.println("Please provide a file name.");
-	/*	interpret("examples/list.spl");
-		interpret("examples/reference.spl");
-		interpret("examples/plus.spl");
-		interpret("examples/factorial.spl");
-		interpret("examples/gcd1.spl");
-		interpret("examples/gcd2.spl");
-		interpret("examples/max.spl");
-		interpret("examples/sum.spl");
-		interpret("examples/map.spl");
-		interpret("examples/pcf.sum.spl");
-		interpret("examples/pcf.even.spl");
-		interpret("examples/pcf.minus.spl");
-		interpret("examples/pcf.factorial.spl");
-		interpret("examples/pcf.fibonacci.spl");
-		interpret("examples/pcf.twice.spl");
-		interpret("examples/polymorphism.spl");
-		interpret("examples/mutualRec.spl");
-		interpret("examples/tailRec.spl");
-		interpret("examples/gc.spl");
-		interpret("examples/stream.spl");*/
 	}
 }

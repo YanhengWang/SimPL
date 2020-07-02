@@ -4,7 +4,7 @@ public class TypeCircularityError extends TypeError {
 
     private static final long serialVersionUID = -5845539927612802390L;
 
-    public TypeCircularityError() {
-        super("Circularity");
+    public TypeCircularityError(Type t1, Type t2) {
+        super("Circular reference between " + t1 + " and " + t2);
     }
 }

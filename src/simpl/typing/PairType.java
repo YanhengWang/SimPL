@@ -26,7 +26,7 @@ public final class PairType extends Type {
             Substitution s2 = t3.unify(t4);
             return s2.compose(s1);
         }
-        throw new TypeMismatchError();
+        throw new TypeMismatchError(this, t);
     }
 
     @Override

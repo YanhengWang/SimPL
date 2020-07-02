@@ -62,6 +62,6 @@ public class PolyType extends Type{
 	}
 
 	public String toString() {
-		return scheme.toString() + "poly with" + freeVar.toString();
+		return scheme.toString() + " poly with " + freeVar.toString();
 	}
 }

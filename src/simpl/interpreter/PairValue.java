@@ -10,7 +10,7 @@ public class PairValue extends Value {
     }
 
     public String toString() {
-        return "pair@" + v1 + "@" + v2;
+        return "(" + v1 + ", " + v2 + ")";
     }
 
     @Override

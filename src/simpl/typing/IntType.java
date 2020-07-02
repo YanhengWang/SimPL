@@ -16,7 +16,7 @@ final class IntType extends Type {
             return t.unify(this);
         if(t instanceof IntType)
             return Substitution.IDENTITY;
-        throw new TypeMismatchError();
+        throw new TypeMismatchError(this, t);
     }
 
     @Override

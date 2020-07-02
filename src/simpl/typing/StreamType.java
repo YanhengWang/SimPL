@@ -21,7 +21,7 @@ public final class StreamType extends Type {
             StreamType st = (StreamType) t;
             return this.t.unify(st.t);
         }
-        throw new TypeMismatchError();
+        throw new TypeMismatchError(this, t);
     }
 
     @Override

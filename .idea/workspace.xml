@@ -10,7 +10,37 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Modify typing rules; Update README and documentation" />
+    <list default="true" id="a092b4c7-f577-4559-a161-f9fced2fbd47" name="Default Changelist" comment="Update README">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimPL.jar" beforeDir="false" afterPath="$PROJECT_DIR$/SimPL.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/interpreter/PairValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/ArrowType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/ArrowType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/BoolType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/BoolType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/IntType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/IntType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/ListType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/ListType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/PairType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/PairType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/RefType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/RefType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/TypeCircularityError.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/TypeCircularityError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/TypeMismatchError.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/TypeMismatchError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/TypeVar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/TypeVar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simpl/typing/UnitType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simpl/typing/UnitType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/append.spl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/append.spl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/interpreter/PairValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/interpreter/PairValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/ArrowType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/BoolType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/IntType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/ListType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/ListType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/PairType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/PairType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/PolyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/PolyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/RefType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/RefType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/StreamType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/StreamType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/TypeCircularityError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/TypeCircularityError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/TypeMismatchError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/TypeMismatchError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/TypeVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/TypeVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simpl/typing/UnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simpl/typing/UnitType.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +102,7 @@
     <configuration name="app" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="simpl.interpreter.Interpreter" />
       <module name="SimPL" />
+      <option name="PROGRAM_PARAMETERS" value="examples/test.spl" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592484790139</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Update README">
+      <created>1592485898120</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1592485898120</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +342,6 @@
     <MESSAGE value="Polish the evaluation rules.&#10;Add built-in functions." />
     <MESSAGE value="Support recursive calls" />
     <MESSAGE value="Implement type inference" />
-    <MESSAGE value="Update README" />
     <MESSAGE value="Support let-polymorphism" />
     <MESSAGE value="Refine let-polymorphism" />
     <MESSAGE value="Support garbage collection" />
@@ -313,7 +350,8 @@
     <MESSAGE value="Tail recursion optimization" />
     <MESSAGE value="Reconstruct library functions" />
     <MESSAGE value="Modify typing rules; Update README and documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify typing rules; Update README and documentation" />
+    <MESSAGE value="Update README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Java" timestamp="1587358910189">
@@ -333,11 +371,11 @@
     </state>
     <state x="368" y="92" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.696@0.0.1366.696" timestamp="1590464014737" />
     <state x="368" y="112" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1366.673@0.23.1366.673" timestamp="1587458485948" />
-    <state x="134" y="23" width="1071" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592462865282">
+    <state x="283" y="23" width="1071" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593674286853">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="134" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.696@0.0.1366.696" timestamp="1587359300273" />
-    <state x="134" y="23" width="1071" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1366.673@0.23.1366.673" timestamp="1592462865282" />
+    <state x="283" y="23" width="1071" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1366.673@0.23.1366.673" timestamp="1593674286853" />
     <state x="416" y="193" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587364372015">
       <screen x="0" y="0" width="1366" height="696" />
     </state>
@@ -360,29 +398,29 @@
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="382" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.673@0.23.1366.673" timestamp="1591584845434" />
-    <state width="1142" height="132" key="GridCell.Tab.0.bottom" timestamp="1592463182156">
+    <state width="1142" height="132" key="GridCell.Tab.0.bottom" timestamp="1593675414424">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.696@0.0.1366.696" timestamp="1590203733894" />
-    <state width="1142" height="132" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1592463182156" />
+    <state width="1142" height="132" key="GridCell.Tab.0.bottom/0.23.1366.673@0.23.1366.673" timestamp="1593675414424" />
     <state width="1081" height="111" key="GridCell.Tab.0.bottom/0.23.1366.674@0.23.1366.674" timestamp="1590070692558" />
-    <state width="1142" height="132" key="GridCell.Tab.0.center" timestamp="1592463182154">
+    <state width="1142" height="132" key="GridCell.Tab.0.center" timestamp="1593675414422">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.696@0.0.1366.696" timestamp="1590203733891" />
-    <state width="1142" height="132" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1592463182154" />
+    <state width="1142" height="132" key="GridCell.Tab.0.center/0.23.1366.673@0.23.1366.673" timestamp="1593675414422" />
     <state width="1081" height="111" key="GridCell.Tab.0.center/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
-    <state width="1142" height="132" key="GridCell.Tab.0.left" timestamp="1592463182154">
+    <state width="1142" height="132" key="GridCell.Tab.0.left" timestamp="1593675414421">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.696@0.0.1366.696" timestamp="1590203733890" />
-    <state width="1142" height="132" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1592463182154" />
+    <state width="1142" height="132" key="GridCell.Tab.0.left/0.23.1366.673@0.23.1366.673" timestamp="1593675414421" />
     <state width="1081" height="111" key="GridCell.Tab.0.left/0.23.1366.674@0.23.1366.674" timestamp="1590070692556" />
-    <state width="1142" height="132" key="GridCell.Tab.0.right" timestamp="1592463182155">
+    <state width="1142" height="132" key="GridCell.Tab.0.right" timestamp="1593675414423">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.696@0.0.1366.696" timestamp="1590203733893" />
-    <state width="1142" height="132" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1592463182155" />
+    <state width="1142" height="132" key="GridCell.Tab.0.right/0.23.1366.673@0.23.1366.673" timestamp="1593675414423" />
     <state width="1081" height="111" key="GridCell.Tab.0.right/0.23.1366.674@0.23.1366.674" timestamp="1590070692557" />
     <state width="1142" height="173" key="GridCell.Tab.1.bottom" timestamp="1591588517354">
       <screen x="0" y="23" width="1366" height="673" />
@@ -408,25 +446,25 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state x="283" y="0" key="SettingsEditor/0.0.1366.696@0.0.1366.696" timestamp="1587359105934" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1592484793671">
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2" timestamp="1592485900672">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.696@0.0.1366.696" timestamp="1590203710856" />
-    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1592484793671" />
-    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590465329997">
+    <state x="462" y="67" key="Vcs.Push.Dialog.v2/0.23.1366.673@0.23.1366.673" timestamp="1592485900672" />
+    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593674740204">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
-    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1366.673@0.23.1366.673" timestamp="1590465329997" />
+    <state x="193" y="123" width="902" height="460" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1366.673@0.23.1366.673" timestamp="1593674740204" />
     <state x="100" y="120" width="1166" height="550" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590465914570">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="100" y="100" width="1166" height="568" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.696@0.0.1366.696" timestamp="1588662708731" />
     <state x="100" y="120" width="1166" height="550" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1366.673@0.23.1366.673" timestamp="1590465914570" />
-    <state x="480" y="234" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591588438237">
+    <state x="480" y="234" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593675572892">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="475" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.696@0.0.1366.696" timestamp="1588080994195" />
-    <state x="480" y="234" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1366.673@0.23.1366.673" timestamp="1591588438237" />
+    <state x="480" y="234" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1366.673@0.23.1366.673" timestamp="1593675572892" />
     <state x="345" y="23" width="598" height="673" key="find.popup" timestamp="1591588135803">
       <screen x="0" y="23" width="1366" height="673" />
     </state>
@@ -435,10 +473,11 @@
       <screen x="0" y="0" width="1366" height="696" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1366.696@0.0.1366.696" timestamp="1587361985846" />
-    <state x="348" y="20" width="670" height="676" key="search.everywhere.popup" timestamp="1588661972681">
-      <screen x="0" y="0" width="1366" height="696" />
+    <state x="348" y="42" width="670" height="654" key="search.everywhere.popup" timestamp="1593674673011">
+      <screen x="0" y="23" width="1366" height="673" />
     </state>
     <state x="348" y="20" width="670" height="676" key="search.everywhere.popup/0.0.1366.696@0.0.1366.696" timestamp="1588661972681" />
+    <state x="348" y="42" width="670" height="654" key="search.everywhere.popup/0.23.1366.673@0.23.1366.673" timestamp="1593674673011" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
